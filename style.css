@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    font-family: 'Playfair Display';
+}
+
+:root {
+    --primary-color: #FF4C00;
+    --secondary-color: #992E00;
+    --accent-color: #CF4B13;
+    --navText-color: #E7E7E7;
+    --paText-color: #E7E7E7;
+    --primaryText-color: #FFFFFF;
+}
+
+
+.ellipse-2 {
+    position: absolute;
+    width: 855.27px;
+    height: 955.16px;
+    left: calc(50% - 855.27px/2 + 0px);
+    top: -17.29px;
+    background: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
+    mix-blend-mode: color-dodge;
+    opacity: 10;
+    filter: blur(116.794px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+/* Badge Group */
+
+/* Auto layout */
+.badge-group {  
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 3.12143px 4.68214px 3.12143px 3.12143px;
+gap: 3.12px;
+
+width: 224.14px;
+height: 22.24px;
+
+background: rgba(253, 185, 156, 0.2);
+border-radius: 3118.31px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
