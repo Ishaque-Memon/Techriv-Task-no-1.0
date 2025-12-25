@@ -5,8 +5,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #000000;
-    color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
@@ -33,7 +31,7 @@ body {
     top: -17.29px;
     background: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
     mix-blend-mode: color-dodge;
-    opacity: 10;
+    opacity: 0.82;
     filter: blur(116.794px);
     transform: matrix(1, 0, 0, -1, 0, 0);
     flex: none;
@@ -43,27 +41,15 @@ body {
     pointer-events: none;
 }
 
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
-
-/* Badge Group */
-
-/* Auto layout */
-.badge-group {  
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 3.12143px 4.68214px 3.12143px 3.12143px;
-gap: 3.12px;
-
-width: 224.14px;
-height: 22.24px;
-
-background: rgba(253, 185, 156, 0.2);
-border-radius: 3118.31px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+.animate-slide{
+    animation: slide 20s linear infinite;
 }
