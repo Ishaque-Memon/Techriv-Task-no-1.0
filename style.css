@@ -18,8 +18,10 @@ body {
     --secondary-color: #992E00;
     --accent-color: #CF4B13;
     --navText-color: #E7E7E7;
-    --paText-color: #E7E7E7;
+    --paText-color: #cbd5e0;
     --primaryText-color: #FFFFFF;
+    --primaryBgcolor: #FFFFFF;
+    --SecondaryBgcolor: #121217;
 }
 
 
@@ -53,3 +55,4 @@ body {
 .animate-slide{
     animation: slide 20s linear infinite;
 }
+
