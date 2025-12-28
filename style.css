@@ -66,16 +66,19 @@ h3 {
     pointer-events: none;
 }
 
-@keyframes slide{
-    from{
+/* Infinite Marquee - seamless loop */
+@keyframes slide {
+    0% {
         transform: translateX(0);
     }
-    to{
-        transform: translateX(-33.33%);
+    100% {
+        transform: translateX(-25%);
     }
 }
 
-.animate-slide{
+.animate-slide {
+    display: flex;
+    width: max-content;
     animation: slide 10s linear infinite;
     will-change: transform;
 }
