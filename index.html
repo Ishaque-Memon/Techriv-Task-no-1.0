@@ -6,16 +6,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-    <body class="text-white font-sans relative overflow-auto before:content-[''] 
+    <body class="text-white font-sans relative overflow-x-hidden overflow-y-auto before:content-[''] 
     before:fixed before:top-0 before:left-0 before:right-0    
     before:bottom-0 before:bg-[#0a0a0a] before:z-[-2]">
     <!-- Ellipse  -->
-    <div class="ellipse-2"></div>
+    <div class="ellipse-2 max-w-full"></div>
    <!-- Navigation Bar -->
-    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <div class="flex items-center space-x-8">
+    <nav class="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-4 sm:space-x-8">
             <div class="flex items-center space-x-2">
-                <img src="assets/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain" />
+                <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain" />
             </div>
             <div class="hidden md:flex space-x-6 text-[var(--navText-color)] text-sm font-medium">
                 <a href="#">About Us</a>
@@ -24,173 +24,172 @@
                 <div class="relative">
                     <a href="#" class="transition flex items-center">
                         Pages
-                        <img src="assets/Vector_Dropdown_Arrow.svg" alt="right-arrow-vector" class="ml-2 w-2 h-2"/>
+                        <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" alt="right-arrow-vector" class="ml-2 w-2 h-2"/>
                     </a>
                 </div>
             </div>
         </div>
         <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-        <button class="bg-[var(--primary-color)] text-white px-4 py-2 rounded-full transition flex items-center space-x-2 text-xs cursor-pointer">
-             <span>Buy this template</span>
-                    <img src="assets/Vector.svg" alt="right-arrow-vector"/>
+        <button class="bg-[var(--primary-color)] text-white px-3 sm:px-4 py-2 rounded-full transition flex items-center space-x-2 text-xs cursor-pointer">
+             <span class="hidden sm:inline">Buy this template</span>
+             <span class="sm:hidden">Buy</span>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
             </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-8 pt-20 pb-6 text-center flex flex-col items-center">
-        <div class="inline-flex items-center space-x-2 mb-8 bg-[rgba(253,185,156,0.2)] px-1 py-1 pr-2 rounded-full">
+    <section class="max-w-5xl mx-auto px-4 sm:px-8 pt-12 sm:pt-20 pb-6 text-center flex flex-col items-center">
+        <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgba(253,185,156,0.2)] px-1 py-1 pr-2 rounded-full">
         <span class="bg-[var(--primary-color)] text-white text-xs px-2 rounded-full">Update</span>
             <a href="#" class="text-[var(--primaryText-color)] text-xs transition flex items-center space-x-1 cursor-pointer">
               <span>See what's new in Grauberg</span>
-                <img src="assets/Vector.svg" alt="right-arrow-vector" class="w-2 h-2"/>
+                <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="w-2 h-2"/>
                </span>
             </a>
         </div>
 
         <!-- Main Heading -->
-        <h1 class="text-5xl md:text-6xl font-normal mb-6">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-normal mb-4 sm:mb-6">
             Effortless Project<br>
             Management for<br>
             <span class="text-[var(--primary-color)] heading">Digital Agencies</span>
         </h1>
 
         <!-- Subheading -->
-        <p class="text-2xl font-light text-[var(--paText-color)] text-gray-400 max-w-2xl mx-auto mb-8">
+        <p class="text-base sm:text-xl md:text-2xl font-light text-[var(--paText-color)] text-gray-400 max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
             Streamline your projects, maximize efficiency, and elevate your business with our cutting-edge project management tool designed for the real estate industry.
         </p>
 
         <!-- User Avatar -->
-        <div class="flex flex-col items-center space-y-6 mb-16">
-            <div class="flex items-center space-x-4">
+        <div class="flex flex-col items-center space-y-4 sm:space-y-6 mb-10 sm:mb-16">
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <div class="flex -space-x-2">
-                    <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-10 h-10 rounded-full border-2 border-black object-cover">
-                    <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-10 h-10 rounded-full border-2 border-black object-cover">
-                    <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-10 h-10 rounded-full border-2 border-black object-cover">
-                    <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-10 h-10 rounded-full border-2 border-black object-cover">
-                    <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                    <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
+                    <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
+                    <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
+                    <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
+                    <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
                 </div>
-                <span class="text-md text-[var(--primaryText-color)] font-light">2000+ Active Users</span>
+                <span class="text-sm sm:text-md text-[var(--primaryText-color)] font-light">2000+ Active Users</span>
             </div>
             <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
             <button class="bg-[var(--primary-color)] text-white px-4 py-2 rounded-full transition flex items-center space-x-2 text-xs cursor-pointer">
                 <span>Start Your Free Trial</span>
-                    <img src="assets/Vector.svg" alt="right-arrow-vector"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
             </button>
         </div>
         </div>
             <!-- Dashboard Tasks Preview -->
-            <div class="relative rounded-xl overflow-hidden">
-                <img src="assets/Dashboard_Tasks.svg" alt="Dashboard Tasks Preview" class="w-full"/>
-            <!-- <svg width="100%" height="100%" class="absolute inset-0 pointer-events-none">
-                    <defs>
-                        <linearGradient id="grandTop">
-
-                        </linearGradient>
-                    </defs>
-                </svg> -->
+            <div class="relative rounded-xl overflow-hidden w-full">
+                <img src="assets/Image_Cards/Dashboard_Image/Dashboard_Tasks.svg" alt="Dashboard Tasks Preview" class="w-full"/>
             </div>
         </section>
         <!-- Trusted Companies Section -->
-         <section class="flex items-center flex-col overflow-hidden mt-16 pb-10">
-                <p class="font-light">
+         <section class="flex items-center flex-col overflow-hidden mt-10 sm:mt-16 pb-10 px-4 sm:px-0">
+                <p class="font-light text-sm sm:text-base text-center">
                     Trusted by Leading Digital Agencies
                 </p>
-                <div class="mt-6 relative">
-                    <div class="mt-7 flex">
-                        <img src="assets/slider/logo/logos.svg" alt="Trusted Companies" 
-                        class="animate-slide "/>
-                        <img src="assets/slider/logo/logos.svg" alt="Trusted Companies" 
-                        class="animate-slide "/>
-                        <img src="assets/slider/logo/logos.svg" alt="Trusted Companies" 
-                        class="animate-slide "/>
-                        <img src="assets/slider/logo/logos.svg" alt="Trusted Companies" 
-                        class="animate-slide "/>
-                        <img src="assets/slider/logo/logos.svg" alt="Trusted Companies" 
-                        class="animate-slide "/>
+                <div class="w-full lg:w-5xl mt-6 relative overflow-hidden">
+                    <div class="mt-7 flex gap-6 sm:gap-10 animate-slide">
+                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
+                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto"/>
                     </div>
-                    <div class="absolute left-0 top-0 bottom-0 z-10">
-                        <img src="assets/slider/overlays/overlayleft.svg" alt="Trusted Companies"/> 
+                    <div class="absolute left-0 top-0 bottom-0 z-10 hidden sm:block">
+                        <img src="assets/Slider_Overlays/overlayleft.svg" alt="Trusted Companies"/> 
                     </div>
-                    <div class="absolute right-[-1px] top-0 bottom-0 z-10">
-                        <img src="assets/slider/overlays/overlayright.svg" alt="Trusted Companies"/> 
+                    <div class="absolute right-[-1px] top-0 bottom-0 z-10 hidden sm:block">
+                        <img src="assets/Slider_Overlays/overlayright.svg" alt="Trusted Companies"/> 
                     </div>
                 </div>
         </section>
 
-        <!-- Hero Section -->
-        <section class="max-w-5xl mx-auto px-8  pt-24 pb-6 text-center flex flex-col items-center">
-            <div class="inline-flex items-center space-x-2 mb-8 bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full">
+        <!-- Features Section -->
+        <section class="max-w-5xl lg:max-w-none mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-6 text-center flex flex-col items-center">
+            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full">
              <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
                 <span>See what's new in  <span class="text-[16px]"> Grauberg </span></span>
              </div>
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-4xl font-normal mb-6 leading-tight">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-normal mb-4 sm:mb-6 leading-tight">
                 Revolutionize  your<br>
                 <span class="text-[var(--primary-color)] heading">Project Management</span>
             </h1>
 
             <!-- Subheading -->
-            <p class="text-base font-light text-[var(--paText-color)] max-w-2xl mx-auto mb-8">
-                Unlock seamless collaboration and unparalleled <br>
+            <p class="text-sm sm:text-base font-light text-[var(--paText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
+                Unlock seamless collaboration and unparalleled <br class="hidden sm:block">
                 efficiency with our intuitive canvas board.
             </p>
 
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-6 sm:gap-10 w-full">
                 <!-- First Card Row -->
-          <div class="flex flex-col lg:flex-row items-stretch bg-[var(--SecondaryBgcolor)] rounded-3xl overflow-hidden
-            w-full lg:w-[1200px] mx-auto h-auto lg:h-[560px] border-white/5 border">
+          <div class="flex flex-col lg:flex-row items-stretch bg-[var(--SecondaryBgcolor)] rounded-2xl sm:rounded-3xl overflow-hidden
+            w-full max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 border">
             <!-- left image -->
-            <div class="w-full lg:w-1/2 h-[320px] lg:h-full flex-shrink-0">
+            <div class="w-full lg:w-1/2 h-[180px] sm:h-[240px] lg:h-full flex-shrink-0">
                 <img src="assets/Image_Cards/Process_Card/Card.svg" alt="Process Card"
                     class="w-full h-full object-cover drop-shadow-2xl" />
             </div>
 
             <!-- right content -->
-            <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-6 lg:pl-12 text-start p-8 lg:p-11">
+            <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-4 sm:space-y-5 text-start p-5 sm:p-8 lg:p-10 lg:pl-10">
                 <div class="inline-flex items-center self-start bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full border border-white/5">
-                <span class="text-[var(--primaryText-color)] text-sm font-medium">See what's new in <span class="text-[16px]"> Grauberg </span></span>
+                <span class="text-[var(--primaryText-color)] text-xs sm:text-sm font-medium">See what's new in <span class="text-[16px]"> Grauberg </span></span>
                 </div>
 
-                <h2 class="text-3xl font-medium text-white leading-tight">Seamless & Collaborative Canvas Board</h2>
+                <h2 class="text-xl sm:text-2xl md:text-[28px] font-medium text-white leading-tight">Seamless & Collaborative Canvas Board</h2>
 
-                <p class="text-[17px] font-light text-[var(--paText-color)] leading-relaxed opacity-80">
+                <p class="text-sm sm:text-[15px] font-light text-[var(--paText-color)] leading-relaxed opacity-80">
                 Experience the ultimate in project visualization and team collaboration. Our intuitive canvas board makes it easy to map out tasks, track progress, and ensure everyone is on the same page. With real-time updates and drag-and-drop functionality, your team can work together effortlessly, no matter where they are.
                 </p>
 
                 <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full self-start">
-                <button class="bg-[var(--primary-color)] text-white px-5 py-2.5 rounded-full flex items-center space-x-2 text-xs font-medium">
+                <button class="bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full flex items-center space-x-2 text-xs font-medium">
                     <span>Start Your Free Trial</span>
-                    <img src="assets/Vector.svg" alt="arrow"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="arrow"/>
                 </button>
                 </div>
             </div>
             </div>     
                        <!-- Feature Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-start ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 text-start w-full max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Real-Time Collaboration -->
-            <div class="flex flex-col relative left-14">
-                <h3 class="text-lg font-medium text-white mb-4">Real-Time Collaboration</h3>
-                <p class="text-gray-400 text-sm leading-relaxed w-full lg:w-[70%] max-w-[1200px]">
-                    Stay connected with your team at all times. Our canvas board updates in real-time, allowing for instant feedback and seamless teamwork, reducing delays and miscommunications.
+            <div class="flex flex-col">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Real-Time Collaboration</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
+                    Stay connected with your team at all <br class="hidden lg:inline"/> times. Our canvas board updates in <br class="hidden lg:inline"/> real-time, allowing for instant feedback <br class="hidden lg:inline"/> and seamless teamwork, reducing <br class="hidden lg:inline"/> delays and miscommunications.
                 </p>
             </div>
 
             <!-- Customizable Workflows -->
-            <div class="flex flex-col relative left-16">
-                <h3 class="text-lg font-medium text-white mb-4">Customizable Workflows</h3>
-                <p class="text-gray-400 text-sm leading-relaxed w-full lg:w-[70%] max-w-[1200px]">
-                    Tailor the canvas board to fit your unique project needs. Customize task categories, set priorities, and create templates that streamline your processes and keep your projects on track.
+            <div class="flex flex-col ml-0 md:ml-6">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-4">Customizable Workflows</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
+                    Tailor the canvas board to fit your <br class="hidden lg:inline"/> unique project needs. Customize task <br class="hidden lg:inline"/> categories, set priorities, and create <br class="hidden lg:inline"/> templates that streamline your <br class="hidden lg:inline"/> processes and keep your projects on <br class="hidden lg:inline"/> track.
                 </p>
             </div>
 
             <!-- Visual Task Management -->
-            <div class="flex flex-col relative left-16">
-                <h3 class="text-lg font-medium text-white mb-4">Visual Task Management</h3>
-                <p class="text-gray-400 text-sm leading-relaxed w-full lg:w-[70%] max-w-[1200px]">
-                    Easily visualize your project's progress with our intuitive interface. The drag-and-drop functionality and clear task assignments ensure everyone knows what needs to be done and when, leading to increased efficiency and clarity.
+            <div class="flex flex-col ml-0 md:ml-6">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-4">Visual Task Management</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
+                    Easily visualize your project's progress <br class="hidden lg:inline"/> with our intuitive interface. The drag-<br class="hidden lg:inline"/>and-drop functionality and clear task <br class="hidden lg:inline"/> assignments ensure everyone knows <br class="hidden lg:inline"/> what needs to be done and when,<br class="hidden lg:inline"/> leading to increased efficiency and <br class="hidden lg:inline"/> clarity.
                 </p>
             </div>
         </div>
@@ -199,5 +198,294 @@
         
         </section>
 
+        <!-- Testimonials Section -->
+        <section class="py-16 sm:py-24 overflow-hidden">
+            <!-- Header Box -->
+            <div class="max-w-4xl mx-auto px-4 sm:px-8 mb-10 sm:mb-16">
+                <div class="py-8 sm:py-12 px-6 sm:px-12 text-center">
+                    <div class="inline-flex items-center mb-6 bg-white/5 px-3 py-1 rounded-full">
+                        <span class="text-white text-xs">Real Feedback from Real Users</span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4">
+                        What <span class="text-[var(--primary-color)] heading">Our Clients</span> Are Saying
+                    </h2>
+                    
+                    <p class="text-sm sm:text-base font-light text-[var(--paText-color)] max-w-xl mx-auto">
+                        Our clients have experienced remarkable improvements in<br class="hidden sm:block">
+                        their project management and overall productivity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Testimonial Carousel -->
+            <div class="flex justify-center items-start gap-4 sm:gap-6 px-4 sm:px-6 lg:px-0">
+                <!-- Left Preview Card (hidden on mobile) -->
+                <div class="hidden lg:flex lg:flex-col w-1/4 text-start p-6 mt-8">
+                    <!-- Stars -->
+                    <div class="flex gap-1 mb-3 sm:mb-5">
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                    </div>
+                    <p class="text-lg text-[var(--primaryText-color)]">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-white font-medium text-sm">Name Surname</p>
+                        <p class="text-gray-500 text-xs">Position, Company name</p>
+                    </div>
+                </div>
+
+                <!-- Center Main Card -->
+                <div class="relative w-full max-w-[calc(100%-2rem)] sm:max-w-xl bg-[var(--SecondaryBgcolor)] p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl z-10 overflow-hidden mx-auto lg:mx-0">
+                    <!-- Gradient overlay - centered at top like ellipse -->
+                    <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                    
+                    <div class="relative z-20 text-start">
+                        <!-- Stars -->
+                        <div class="flex gap-1 mb-3 sm:mb-5">
+                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        </div>
+
+                        <!-- Quote -->
+                        <blockquote class="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-5 sm:mb-6 text-white">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                        </blockquote>
+
+                        <!-- Author -->
+                        <div class="flex flex-col">
+                            <span class="text-sm sm:text-base font-semibold text-white">Name Surname</span>
+                            <span class="text-gray-500 text-xs sm:text-sm">Position, Company name</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Preview Card (hidden on mobile) -->
+                <div class="hidden lg:flex lg:flex-col w-1/4 text-start p-6 mt-8">
+                    <!-- Stars -->
+                    <div class="flex gap-1 mb-3 sm:mb-5">
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+                    </div>
+                    <p class="text-lg text-[var(--primaryText-color)]">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-white font-medium text-sm">Name Surname</p>
+                        <p class="text-gray-500 text-xs">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section - 2nd -->
+        <section class="w-full mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-16 text-center flex flex-col items-center bg-[var(--thirdBgcolor)]">
+            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full">
+             <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
+                <span>See what's new in  <span class="text-[16px]"> Grauberg </span></span>
+             </div>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
+                Unleash the full potential<br>of
+                <span class="text-[var(--primary-color)] heading">Your Projects</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="text-sm sm:text-base font-light text-[var(--navText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
+                Discover the powerful features that make our project <br class="hidden sm:block">
+                management tool indispensable for digital agencies.
+            </p>
+
+            <!-- Feature Cards Grid - centered -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-start max-w-[1100px] w-full mt-8 sm:mt-12 gap-y-12 gap-x-16 lg:gap-x-24 px-4 sm:px-8">
+                
+                <!-- Seamless Collaboration -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Group_Vector.svg" alt="Collaboration" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Seamless Collaboration</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Our platform enables real-time collaboration, ensuring that your team stays connected and coordinated, no matter where they are.
+                    </p>
+                </div>
+
+                <!-- Customizable Workflows -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Gear_Vector.svg" alt="Workflows" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Customizable Workflows</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Tailor the canvas board to fit your unique project needs. Customize task categories, set priorities, and create templates that streamline your processes and keep your projects on track.
+                    </p>
+                </div>
+
+                <!-- Advanced Analytics -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Pie_Chart_Vector.svg" alt="Analytics" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Advanced Analytics</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Gain insights with our robust analytics dashboard. Track key metrics, monitor progress, and make data-driven decisions to enhance project outcomes.
+                    </p>
+                </div>
+
+                <!-- Time Tracking -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Clock_Vector.svg" alt="Time Tracking" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Time Tracking</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Keep track of time spent on tasks to improve efficiency and optimize resource allocation, ensuring every project stays on schedule and within budget.
+                    </p>
+                </div>
+
+                <!-- Automated Notifications -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Alaram_Vector.svg" alt="Notifications" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Automated Notifications</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Stay on top of deadlines with automated reminders and notifications, reducing the risk of missed tasks and ensuring timely project completion.
+                    </p>
+                </div>
+
+                <!-- Visual Task Management -->
+                <div class="flex flex-col">
+                    <img src="assets/Vectors/Grid_blocks_Vector.svg" alt="Task Management" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
+                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Visual Task Management</h3>
+                    <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
+                        Easily visualize your project's progress with our intuitive interface. Drag-and-drop functionality and clear task assignments enhance clarity and efficiency.
+                    </p>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <section class="w-full mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-16 text-center flex flex-col items-center bg-[var(--thirdBgcolor)]">
+
+            <!-- Main Heading -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
+                Choose the perfect <br>plan for 
+                <span class="text-[var(--primary-color)] heading">Your Agency</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="text-sm sm:text-base font-light text-[var(--navText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
+                Flexible pricing options to meet the needs of every <br class="hidden sm:block">
+                team, from startups to large agencies.
+            </p>
+    <div class="flex flex-col lg:flex-row justify-center items-center lg:items-end gap-6 w-full mt-8 sm:mt-12 px-4 sm:px-8 max-w-7xl mx-auto">
+    
+    <div class="flex flex-col bg-[var(--cardbgcolor)] rounded-3xl p-6 border-white/10 border w-full max-w-[325px] h-full min-h-[330px] mb-0 sm:mb-15">
+        <div class="flex flex-col gap-2 items-start mb-6">
+            <p class="text-xs font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">Starter</p>
+            <h2 class="text-5xl font-medium text-white">Free</h2>
+        </div>
+        <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mb-8 text-start">Perfect for individuals and small <br> teams getting started.</p>
+        
+        <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/White_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Unlimited Projects</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/White_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Basic Task Management</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/White_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Real-Time Collaboration</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/White_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Community Support</span>
+            </li>
+        </ul>
+        <button class="bg-white text-black text-sm font-semibold rounded-xl px-4 py-3 w-full hover:bg-gray-200 transition cursor-pointer">
+            Start Your Free Trial
+        </button>
+    </div>
+
+    <div class="flex flex-col bg-[#0A0A0A] rounded-3xl p-8 border border-[#FF4C00]/40 
+                w-full max-w-[360px] lg:w-[380px] relative z-10 min-h-[520px]" 
+         style="box-shadow: 0 0 50px -10px rgba(255, 76, 0, 0.3);">
+        
+        <div class="flex flex-col gap-1 items-start mb-6 relative"> 
+            <p class="text-xs font-normal uppercase tracking-wider text-[var(--primary-color)]">Teams</p>
+            <div class="flex items-baseline text-white">
+                <span class="text-xs font-normal mr-1 absolute left-[-10px]">$</span>
+                <h2 class="text-6xl font-medium">45</h2>
+                <span class="text-xs font-medium ml-1 absolute left-9 top-5">.00</span>
+            </div>
+        </div>
+
+        <p class="text-xs text-[var(--primaryText-color)] opacity-80 mb-1 text-start">Per user / Yearly</p>
+        <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">Ideal for growing teams that need more advanced features and support.</p>
+        
+        <ul class="space-y-3 mb-10 flex-grow">
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/Orange_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Everything in Starter Plan, Plus</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/Orange_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Advanced Analytics</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/Orange_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Customizable Workflows</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/Orange_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Automated Notifications</span>
+            </li>
+            <li class="flex items-center gap-3">
+                <img src="assets/Vectors/Orange_Tick_Vector.svg" alt="tick" class="w-5 h-5"/>
+                <span class="text-xs text-[var(--primaryText-color)]">Priority Support</span>
+            </li>
+        </ul>
+
+        <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
+            <button class="bg-[var(--primary-color)] text-white px-4 py-2 rounded-full transition flex items-center justify-center space-x-2 text-xs cursor-pointer w-full">
+                <span>Start Your Free Trial</span>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col bg-[var(--cardbgcolor)] rounded-3xl p-6 border-white/10 border w-full max-w-[325px] h-full min-h-[420px] mb-0 sm:mb-8">
+        <div class="flex flex-col gap-1 items-start mb-6 relative">
+            <p class="text-xs font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">Business</p>
+            <div class="flex items-baseline text-white">
+                <span class="text-xs font-normal mr-1 absolute  left-[-10px]">$</span>
+                <h2 class="text-5xl font-medium">90</h2>
+                <span class="text-xs font-normal ml-1 absolute left-9 top-5">.00</span>
+            </div>
+        </div>
+        <p class="text-xs text-[var(--primaryText-color)] opacity-80 mb-1 text-start">Per user / Yearly</p>
+        <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">Designed for large agencies that require comprehensive tools and premium support.</p>
+        
+        <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center gap-3"><img src="assets/Vectors/White_Tick_Vector.svg" class="w-5 h-5"/><span class="text-xs text-[var(--primaryText-color)]">Everything in Teams Plan</span></li>
+            <li class="flex items-center gap-3"><img src="assets/Vectors/White_Tick_Vector.svg" class="w-5 h-5"/><span class="text-xs text-[var(--primaryText-color)]">Dedicated Account Manager</span></li>
+            <li class="flex items-center gap-3"><img src="assets/Vectors/White_Tick_Vector.svg" class="w-5 h-5"/><span class="text-xs text-[var(--primaryText-color)]">Third Party Integrations</span></li>
+            <li class="flex items-center gap-3"><img src="assets/Vectors/White_Tick_Vector.svg" class="w-5 h-5"/><span class="text-xs text-[var(--primaryText-color)]">Enhanced Security</span></li>
+            <li class="flex items-center gap-3"><img src="assets/Vectors/White_Tick_Vector.svg" class="w-5 h-5"/><span class="text-xs text-[var(--primaryText-color)]">Unlimited Users</span></li>
+        </ul>
+        <button class="bg-white text-black text-sm font-semibold rounded-xl px-4 py-3 w-full hover:bg-gray-200 transition cursor-pointer">
+            Start Your Free Trial
+        </button>
+    </div>
+
+</div>
+        
+        </section>
   </body>
 </html>

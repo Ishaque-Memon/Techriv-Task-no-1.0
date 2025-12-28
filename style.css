@@ -7,6 +7,26 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+/* Default heading sizes (Tailwind resets these) */
+h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem;
+    font-weight: 500;
 }
 
 .heading{
@@ -20,25 +40,28 @@ body {
     --navText-color: #E7E7E7;
     --paText-color: #cbd5e0;
     --primaryText-color: #FFFFFF;
+    --primaryText-Bcolor: #000000;
     --primaryBgcolor: #FFFFFF;
     --SecondaryBgcolor: #121217;
+    --linear-gradient: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
+    --thirdBgcolor: #141416;
+    --cardbgcolor: #0B0C0E;
+
 }
 
 
 .ellipse-2 {
     position: absolute;
-    width: 855.27px;
+    width: 100%;
+    max-width: 855.27px;
     height: 955.16px;
-    left: calc(50% - 855.27px/2 + 0px);
-    top: -17.29px;
+    left: 50%;
+    transform: translateX(-50%) scaleY(-1);
+    top: -14.29px;
     background: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
     mix-blend-mode: color-dodge;
     opacity: 0.82;
     filter: blur(116.794px);
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     z-index: -1;
     pointer-events: none;
 }
@@ -48,11 +71,11 @@ body {
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-33.33%);
     }
 }
 
 .animate-slide{
-    animation: slide 20s linear infinite;
+    animation: slide 10s linear infinite;
+    will-change: transform;
 }
-
