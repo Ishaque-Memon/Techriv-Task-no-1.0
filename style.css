@@ -77,7 +77,7 @@ h3 {
 }
 
 .animate-slide {
-    display: flex;
+    display: flex;  
     width: max-content;
     animation: slide 10s linear infinite;
     will-change: transform;
@@ -99,5 +99,5 @@ h3 {
 }
 
 #mobile-menu-toggle:checked ~ nav .hamburger-bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
