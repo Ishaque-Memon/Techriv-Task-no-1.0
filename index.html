@@ -119,10 +119,42 @@
 
             </div>
             <!-- Dashboard Tasks Preview -->
-            <div class="relative rounded-xl overflow-hidden w-full">
-            <img src="assets/Image_Cards/Dashboard_Image/Dashboard_Tasks.svg" alt="Dashboard Tasks Preview" class="w-full"/>
-            </div>
+           <div class="relative w-full p-10 bg-[#0a0a0a]"> <div class="max-w-full flex bg-[#1a1a1a] pr-[1px] pl-[1px] pt-[1.5px] pb-[1px] rounded-2xl relative overflow-hidden shadow-2xl">
+        
+                <div class="absolute -top-10 -left-10 w-62 h-82 
+                            bg-[var(--primary-color)] opacity-80 rounded-full 
+                            blur-[20px] pointer-events-none z-0">
+                </div>
 
+                <div class="absolute -bottom-16 right-[51%] w-80 h-60 
+                            bg-[var(--primary-color)] opacity-70 rounded-full 
+                            blur-[10px] pointer-events-none z-0">
+                </div>
+                <div class="absolute -bottom-16 right-[55%] w-30 h-40 
+                            bg-[var(--primary-color)] opacity-100 rounded-full 
+                            blur-[10px] pointer-events-none z-0">
+                </div>
+                <div class="absolute -top-30 -right-[40%] w-[800px] h-96 
+                            bg-[var(--primary-color)] opacity-40 rounded-full 
+                            blur-[80px] pointer-events-none z-0">
+                </div>
+                <div class="absolute -top-40 -right-[40%] w-[500px] h-96 
+                            bg-[var(--primary-color)] opacity-80 rounded-full 
+                            blur-[20px] pointer-events-none z-0">
+                </div>
+                <div class="absolute -bottom-16 -right-[50%] w-[800px] h-96 
+                            bg-[var(--primary-color)] opacity-30 rounded-full 
+                            blur-[60px] pointer-events-none z-0">
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-tr from-black/50 via-transparent to-transparent pointer-events-none z-0"></div>
+
+                <img src="assets/Image_Cards/Dashboard_Image/Dashboard_Tasks.svg" 
+                    alt="Dashboard Tasks Preview" 
+                    class="w-full h-auto z-10 relative rounded-[14px] object-cover opacity-100" />
+                    
+            </div>
+        </div>
             
     </section>
     <!-- Trusted Companies Section -->
@@ -787,107 +819,155 @@
             </p>
             </div>  
             <div class="flex flex-col space-y-4 text-start w-full lg:w-auto">
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">What is included in the free Starter plan?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        The Starter plan includes unlimited projects, basic task management, real-time <br class="hidden lg:inline">
-                        collaboration, and access to our community support. It's perfect for individuals and small <br class="hidden lg:inline">
-                        teams getting started with project management sample link.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 1 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-1" class="faq-toggle hidden" />
+                    <label for="faq-1" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-[var(primaryText-color)]">What is included in the free Starter plan?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            The Starter plan includes unlimited projects, basic task management, real-time <br class="hidden lg:inline">
+                            collaboration, and access to our community support. It's perfect for individuals and small <br class="hidden lg:inline">
+                            teams getting started with project management sample link.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Can I upgrade my plan at any time?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        Yes, you can upgrade your plan at any time to access more advanced features and <br class="hidden lg:inline">
-                        support. Simply go to your ccount settings and choose the plan that best fits your <br class="hidden lg:inline">
-                       needs.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 2 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-2" class="faq-toggle hidden" />
+                    <label for="faq-2" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">Can I upgrade my plan at any time?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            Yes, you can upgrade your plan at any time to access more advanced features and <br class="hidden lg:inline">
+                            support. Simply go to your ccount settings and choose the plan that best fits your <br class="hidden lg:inline">
+                           needs.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">How does the free trial for the Teams plan work?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        When you sign up for the Teams plan, you get a 14-day free trial with access to all the  <br class="hidden lg:inline">
-                        features included in the plan. You can decide to continue with the Teams plan, upgrade to <br class="hidden lg:inline">
-                        the Business plan, or revert to the Starter plan after the trial period.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 3 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-3" class="faq-toggle hidden" />
+                    <label for="faq-3" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">How does the free trial for the Teams plan work?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            When you sign up for the Teams plan, you get a 14-day free trial with access to all the  <br class="hidden lg:inline">
+                            features included in the plan. You can decide to continue with the Teams plan, upgrade to <br class="hidden lg:inline">
+                            the Business plan, or revert to the Starter plan after the trial period.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">What payment methods do you accept?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        We accept all major credit cards, including Visa, MasterCard, American Express, and<br class="hidden lg:inline">
-                        Discover. Payments are processed securely through our payment gateway.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 4 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-4" class="faq-toggle hidden" />
+                    <label for="faq-4" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">What payment methods do you accept?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            We accept all major credit cards, including Visa, MasterCard, American Express, and<br class="hidden lg:inline">
+                            Discover. Payments are processed securely through our payment gateway.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Is my data secure?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        Yes, we take data security very seriously. Our platform uses advanced security measures, <br class="hidden lg:inline">
-                        including encryption and regular security audits, to ensure your data is protected at all <br class="hidden lg:inline">
-                        times.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 5 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-5" class="faq-toggle hidden" />
+                    <label for="faq-5" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">Is my data secure?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            Yes, we take data security very seriously. Our platform uses advanced security measures, <br class="hidden lg:inline">
+                            including encryption and regular security audits, to ensure your data is protected at all <br class="hidden lg:inline">
+                            times.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Do you offer support if I need help?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        Absolutely! The Starter plan includes community support, while the Teams and Business  <br class="hidden lg:inline">
-                        plans offer priority support. Business plan users also have access to a dedicated account <br class="hidden lg:inline">
-                        manager for personalized assistance.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 6 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-6" class="faq-toggle hidden" />
+                    <label for="faq-6" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">Do you offer support if I need help?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            Absolutely! The Starter plan includes community support, while the Teams and Business  <br class="hidden lg:inline">
+                            plans offer priority support. Business plan users also have access to a dedicated account <br class="hidden lg:inline">
+                            manager for personalized assistance.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Can I cancel my subscription at any time?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        Yes, you can cancel your subscription at any time from your account settings. Your <br class="hidden lg:inline">
-                        account will remain active until the end of the current billing period.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 7 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-7" class="faq-toggle hidden" />
+                    <label for="faq-7" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">Can I cancel my subscription at any time?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            Yes, you can cancel your subscription at any time from your account settings. Your <br class="hidden lg:inline">
+                            account will remain active until the end of the current billing period.
+                        </p>
+                    </div>
                 </div>
-                <div class="mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
-                    <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">What integrations do you offer?</h3>
-                    <p class="text-[var(--navText-color)] text-xs leading-relaxed">
-                        Our platform integrates seamlessly with a variety of tools and platforms, including Slack,<br class="hidden lg:inline">
-                        Google Drive, Dropbox, and many more. The Business plan includes full access to all <br class="hidden lg:inline">
-                        integrations.
-                    </p>
-                    <button class="flex items-center justify-center w-8 h-8 rounded-full  
-                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-1 py-1 absolute cursor-pointer
-                                   top-0 right-0 mt-2 mr-2">
-                            <img src="assets/Vectors/X_Vector.svg" class="w-[10px] h-[10px]"/>
-                    </button>  
+                <!-- FAQ Item 8 -->
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                    <input type="checkbox" id="faq-8" class="faq-toggle hidden" />
+                    <label for="faq-8" class="faq-label flex items-center justify-between cursor-pointer">
+                        <h3 class="text-base sm:text-lg font-medium text-white">What integrations do you offer?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                            <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
+                            <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
+                        </span>
+                    </label>
+                    <div class="faq-content">
+                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                            Our platform integrates seamlessly with a variety of tools and platforms, including Slack,<br class="hidden lg:inline">
+                            Google Drive, Dropbox, and many more. The Business plan includes full access to all <br class="hidden lg:inline">
+                            integrations.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

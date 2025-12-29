@@ -46,7 +46,7 @@ h3 {
     --linear-gradient: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
     --thirdBgcolor: #141416;
     --cardbgcolor: #0B0C0E;
-
+    --fadedbg-color: #14151A;
 }
 
 
@@ -189,5 +189,52 @@ h3 {
     background: #FF4C00;
     width: 30px;
     border-radius: 5px;
+}
+
+/* FAQ Accordion Styles */
+.faq-item {
+    overflow: hidden;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    margin-top: 0;
+}
+
+.faq-toggle:checked ~ .faq-content {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 12px;
+}
+
+/* FAQ Icon - Dropdown Arrow to X transition */
+.faq-icon {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow visible by default, X hidden */
+.faq-arrow {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.faq-x {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+/* Active state: Hide arrow, show X with rotation */
+.faq-toggle:checked ~ .faq-label .faq-arrow {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.faq-toggle:checked ~ .faq-label .faq-x {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
