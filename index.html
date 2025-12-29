@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   </head>
     <body class="text-white font-sans relative overflow-x-hidden overflow-y-auto before:content-[''] 
     before:fixed before:top-0 before:left-0 before:right-0    
@@ -18,7 +19,8 @@
     <nav class="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 max-w-7xl mx-auto relative">
             <div class="flex items-center space-x-4 sm:space-x-8">
                   <!-- Hamburger Menu Button (Mobile) -->
-                <label for="mobile-menu-toggle" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 cursor-pointer z-[60]">
+                <label for="mobile-menu-toggle" class="md:hidden flex flex-col justify-center 
+                            items-center w-8 h-8 space-y-1.5 cursor-pointer z-[60]">
                     <span class="hamburger-bar block w-5 h-0.5 bg-white transition-all duration-300 origin-center"></span>
                     <span class="hamburger-bar block w-5 h-0.5 bg-white transition-all duration-300"></span>
                     <span class="hamburger-bar block w-5 h-0.5 bg-white transition-all duration-300 origin-center"></span>
@@ -38,15 +40,12 @@
                     </div>
                 </div>
             </div>
-            
-        
-                
-                <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-                    <button class="bg-[var(--primary-color)] text-white px-3 sm:px-4 py-2 rounded-full transition 
-                    flex items-center space-x-2 text-xs cursor-pointer">
+            <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
+                <button class="group bg-[var(--primary-color)] text-white px-3 sm:px-4 py-2 rounded-full transition 
+                    flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                     <span class="hidden sm:inline">Buy this template</span>
                     <span class="sm:hidden">Buy</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
                 </button>
             </div>
             
@@ -55,12 +54,13 @@
     <!-- Mobile Menu Overlay (CSS-only) -->
     <div class="mobile-menu-overlay fixed inset-0 bg-[#0a0a0a]/95 z-40 
                 flex-col items-center justify-center space-y-6
-                opacity-0 pointer-events-none transition-opacity duration-300 hidden">
+                opacity-0 pointer-events-none transition-opacity 
+                 duration-300 hidden w-full h-full overflow-hidden">
         
-        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)] transition">About Us</a>
-        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)] transition">Pricing</a>
-        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)] transition">Blogs</a>
-        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)] transition">Pages</a>
+        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">About Us</a>
+        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Pricing</a>
+        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Blogs</a>
+        <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Pages</a>
     </div>
 
     <!-- Hero Section -->
@@ -69,7 +69,7 @@
                 <span class="bg-[var(--primary-color)] text-white text-xs px-2 rounded-full">
                     Update
                 </span>
-                <a href="#" class="text-[var(--primaryText-color)] text-xs transition 
+                <a href="#" class="text-[var(--primaryText-color)] text-xs 
                     flex items-center space-x-1 cursor-pointer">
                     <span>
                         See what's new in Grauberg
@@ -110,10 +110,10 @@
                 </div>
 
                 <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-                    <button class="bg-[var(--primary-color)] text-white px-4 py-2 rounded-full 
-                    transition flex items-center space-x-2 text-xs cursor-pointer">
+                    <button class="group bg-[var(--primary-color)] text-white px-4 py-2 rounded-full 
+                    transition flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                     <span>Start Your Free Trial</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
                     </button>
                 </div>
 
@@ -122,6 +122,7 @@
             <div class="relative rounded-xl overflow-hidden w-full">
             <img src="assets/Image_Cards/Dashboard_Image/Dashboard_Tasks.svg" alt="Dashboard Tasks Preview" class="w-full"/>
             </div>
+
             
     </section>
     <!-- Trusted Companies Section -->
@@ -197,7 +198,7 @@
             <!-- left image -->
             <div class="w-full lg:w-1/2 h-[180px] sm:h-[240px] lg:h-full flex-shrink-0">
                 <img src="assets/Image_Cards/Process_Card/Card.svg" alt="Process Card"
-                    class="w-full h-full object-cover drop-shadow-2xl" />
+                    class="w-full h-full object-cover drop-shadow-2xl"/>
             </div>
 
             <!-- right content -->
@@ -223,11 +224,11 @@
                 your team can work together effortlessly, no matter where they are.
                 </p>
 
-                <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full self-start">
+                <div class="group bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full self-start">
                 <button class="bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5
-                 rounded-full flex items-center space-x-2 text-xs font-medium">
+                 rounded-full flex items-center space-x-2 text-xs font-medium hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                     <span>Start Your Free Trial</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="arrow"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
                 </button>
                 </div>
             </div>
@@ -316,85 +317,158 @@
             </div>
 
             <!-- Testimonial Carousel -->
-            <div class="flex justify-center items-start gap-4 sm:gap-6 px-4 sm:px-6 lg:px-0">
-                <!-- Left Preview Card (hidden on mobile) -->
-                <div class="hidden lg:flex lg:flex-col w-1/4 text-start p-6 mt-8">
-                    <!-- Stars -->
-                    <div class="flex gap-1 mb-3 sm:mb-5">
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
+            <div class="swiper testimonialSwiper w-full mx-auto">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                            <!-- Gradient overlay -->
+                            <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                            <!-- Card overlay for non-active slides -->
+                            <div class="card-overlay absolute inset-0 bg-black/50 z-30 pointer-events-none"></div>
+                            
+                            <div class="relative z-20 text-start">
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                </div>
+                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique. 
+                                    Duis cursus, mi quis viverra ornare, 
+                                    eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                                </blockquote>
+                                <div class="flex flex-col">
+                                    <span class="text-base font-semibold text-white">Name Surname</span>
+                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-lg text-[var(--primaryText-color)]">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Suspendisse varius enim in eros elementum tristique. 
-                        Duis cursus, mi quis viverra ornare, 
-                        eros dolor interdum nulla, ut commodo diam libero vitae erat."
-                    </p>
-                    <div class="mt-4">
-                        <p class="text-white font-medium text-sm">Name Surname</p>
-                        <p class="text-gray-500 text-xs">Position, Company name</p>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                            <!-- Gradient overlay -->
+                            <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                            <!-- Card overlay for non-active slides -->
+                            <div class="card-overlay absolute inset-0 bg-black/50 z-30 pointer-events-none"></div>
+                            
+                            <div class="relative z-20 text-start">
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                </div>
+                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique. 
+                                    Duis cursus, mi quis viverra ornare, 
+                                    eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                                </blockquote>
+                                <div class="flex flex-col">
+                                    <span class="text-base font-semibold text-white">Name Surname</span>
+                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                            <!-- Gradient overlay -->
+                            <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                            <!-- Card overlay for non-active slides -->
+                            <div class="card-overlay absolute inset-0 bg-black/50 z-30 pointer-events-none"></div>
+                            
+                            <div class="relative z-20 text-start">
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                </div>
+                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique. 
+                                    Duis cursus, mi quis viverra ornare, 
+                                    eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                                </blockquote>
+                                <div class="flex flex-col">
+                                    <span class="text-base font-semibold text-white">Name Surname</span>
+                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                            <!-- Gradient overlay -->
+                            <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                            <!-- Card overlay for non-active slides -->
+                            <div class="card-overlay absolute inset-0 bg-black/50 z-30 pointer-events-none"></div>
+                            
+                            <div class="relative z-20 text-start">
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                </div>
+                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique. 
+                                    Duis cursus, mi quis viverra ornare, 
+                                    eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                                </blockquote>
+                                <div class="flex flex-col">
+                                    <span class="text-base font-semibold text-white">Name Surname</span>
+                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                            <!-- Gradient overlay -->
+                            <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+                            <!-- Card overlay for non-active slides -->
+                            <div class="card-overlay absolute inset-0 bg-black/50 z-30 pointer-events-none"></div>
+                            
+                            <div class="relative z-20 text-start">
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                </div>
+                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Suspendisse varius enim in eros elementum tristique. 
+                                    Duis cursus, mi quis viverra ornare, 
+                                    eros dolor interdum nulla, ut commodo diam libero vitae erat."
+                                </blockquote>
+                                <div class="flex flex-col">
+                                    <span class="text-base font-semibold text-white">Name Surname</span>
+                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Center Main Card -->
-                <div class="relative w-full max-w-[calc(100%-2rem)] sm:max-w-xl bg-[var(--SecondaryBgcolor)]
-                 p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl z-10 overflow-hidden mx-auto lg:mx-0">
-                    <!-- Gradient overlay - centered at top like ellipse -->
-                    <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] 
-                    h-[250px] sm:w-[350px] sm:h-[350px] [background:var(--linear-gradient)] 
-                    opacity-20 blur-[100px] rounded-full pointer-events-none">
-                    </div>
                     
-                    <div class="relative z-20 text-start">
-                        <!-- Stars -->
-                        <div class="flex gap-1 mb-3 sm:mb-5">
-                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                            <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        </div>
-
-                        <!-- Quote -->
-                        <blockquote class="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-5 sm:mb-6 text-white">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Suspendisse varius enim in eros elementum tristique. 
-                            Duis cursus, mi quis viverra ornare, 
-                            eros dolor interdum nulla, ut commodo diam libero vitae erat."
-                        </blockquote>
-
-                        <!-- Author -->
-                        <div class="flex flex-col">
-                            <span class="text-sm sm:text-base font-semibold text-white">Name Surname</span>
-                            <span class="text-gray-500 text-xs sm:text-sm">Position, Company name</span>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Right Preview Card (hidden on mobile) -->
-                <div class="hidden lg:flex lg:flex-col w-1/4 text-start p-6 mt-8">
-                    <!-- Stars -->
-                    <div class="flex gap-1 mb-3 sm:mb-5">
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                        <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-4 sm:w-5 sm:h-5"/>
-                    </div>
-                    <p class="text-lg text-[var(--primaryText-color)]">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Suspendisse varius enim in eros elementum tristique. 
-                        Duis cursus, mi quis viverra ornare, 
-                        eros dolor interdum nulla, ut commodo diam libero vitae erat."
-                    </p>
-                    <div class="mt-4">
-                        <p class="text-white font-medium text-sm">Name Surname</p>
-                        <p class="text-gray-500 text-xs">Position, Company name</p>
-                    </div>
-                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-8"></div>
             </div>
     </section>
         <!-- Features Section - 2nd -->
@@ -607,13 +681,14 @@
                     </li>
                 </ul>
 
-                <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
+                <div class="group bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
                     <button class="bg-[var(--primary-color)] text-white px-[10px] py-2 rounded-full 
-                                   transition flex items-center justify-center space-x-2 text-xs cursor-pointer w-full">
-                        <span>Start Your Free Trial</span>
-                            <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector"/>
+                                   transition flex items-center justify-center space-x-2 text-xs cursor-pointer w-full hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+                                    <span>Start Your Free Trial</span>
+                            <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
                     </button>
                 </div>
+
             </div>
 
             <div class="flex flex-col bg-[var(--cardbgcolor)] rounded-3xl p-6 border-white/10 border 
@@ -852,12 +927,12 @@
                 Upgrade anytime to access advanced features and premium<br>
                 support tailored to your team’s needs.
                 </p>
-                <button class="w-fit bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5
-                 rounded-full flex items-center space-x-2 text-xs font-medium">
+                <button class="group w-fit bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5
+                 rounded-full flex items-center space-x-2 text-xs font-medium hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] cursor-pointer">
                     <span>Start Your Free Trial</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="arrow"/>
+                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" 
+                    class="transition-transform duration-300 group-hover:translate-x-1"/>
                 </button>
-                
             </div>
             </div>     
                            
@@ -867,23 +942,23 @@
     <footer class="w-full mx-auto px-4 sm:px-8 pt-10 sm:pt-16 pb-6 sm:pb-12 relative
                    flex flex-col items-center bg-[var(--thirdBgcolor)] overflow-hidden border-t border-white/10">
         
-                <!-- Orange gradient overlay at bottom center -->
-                <div class="absolute bottom-[-150px] sm:bottom-[-100px] left-1/2 -translate-x-1/2 w-full
+        <!-- Orange gradient overlay at bottom center -->
+        <div class="absolute bottom-[-150px] sm:bottom-[-100px] left-1/2 -translate-x-1/2 w-full
                     h-[300px] [background:var(--linear-gradient)] 
                     opacity-40 blur-[200px] rounded-full pointer-events-none mix-blend-color-dodge">
-                </div>
+        </div>
 
-        <div class="w-full max-w-6xl my-24 mx-12 relative z-10">
+            <div class="w-full max-w-6xl my-0 sm:my-24 mx-12 relative z-10">
             <div class="flex flex-col lg:flex-row justify-between items-start w-full gap-12 lg:gap-0">
             
-            <div class="flex flex-col w-full lg:w-[180px]">
-                <div class="flex items-center gap-2 mb-6">
-                    <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain"/>
+                <div class="flex flex-col w-full lg:w-[180px]">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain"/>
+                    </div>
+                    <p class="text-xs text-[var(--primaryText-color)] opacity-80 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                 </div>
-                <p class="text-xs text-[var(--primaryText-color)] opacity-80 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
                 
             <div class="flex flex-col">
                 <h4 class="text-sm font-medium text-[var(--navText-color)] mb-6 opacity-40">Pages</h4>
@@ -943,6 +1018,51 @@
             </div>
         </div> 
     </footer>
+
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var testimonialSwiper = new Swiper(".testimonialSwiper", {
+                slidesPerView: 'auto',
+                spaceBetween: 25,
+                centeredSlides: true,
+                loop: true,
+                speed: 800,
+                grabCursor: true,
+                watchSlidesProgress: true,
+                cssMode: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                on: {
+                    init: function() {
+                        updateSlideStyles(this);
+                    },
+                    slideChangeTransitionStart: function() {
+                        updateSlideStyles(this);
+                    },
+                    setTranslate: function() {
+                        updateSlideStyles(this);
+                    },
+                },
+            });
+
+            function updateSlideStyles(swiper) {
+                const slides = swiper.slides;
+                slides.forEach((slide) => {
+                    const overlay = slide.querySelector('.card-overlay');
+                    
+                    if (slide.classList.contains('swiper-slide-active')) {
+                        if (overlay) overlay.style.opacity = '0';
+                    } else {
+                        if (overlay) overlay.style.opacity = '1';
+                    }
+                });
+            }
+        </script>
 
   </body>
 </html>
