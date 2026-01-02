@@ -1140,40 +1140,14 @@
                 slidesPerView: 'auto',
                 spaceBetween: 25,
                 centeredSlides: true,
-                loop: true,
-                speed: 800,
                 grabCursor: true,
-                watchSlidesProgress: true,
-                cssMode: false,
+                speed: 800,
+                slideToClickedSlide: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
-                on: {
-                    init: function() {
-                        updateSlideStyles(this);
-                    },
-                    slideChangeTransitionStart: function() {
-                        updateSlideStyles(this);
-                    },
-                    setTranslate: function() {
-                        updateSlideStyles(this);
-                    },
-                },
             });
-
-            function updateSlideStyles(swiper) {
-                const slides = swiper.slides;
-                slides.forEach((slide) => {
-                    const overlay = slide.querySelector('.card-overlay');
-                    
-                    if (slide.classList.contains('swiper-slide-active')) {
-                        if (overlay) overlay.style.opacity = '0';
-                    } else {
-                        if (overlay) overlay.style.opacity = '1';
-                    }
-                });
-            }
         </script>
 
   </body>
