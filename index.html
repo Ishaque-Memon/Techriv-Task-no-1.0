@@ -19,8 +19,9 @@
     <input type="checkbox" id="mobile-menu-toggle" class="hidden" />
 
    <!-- Navigation Bar -->
-    <nav class="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 max-w-7xl mx-auto relative">
-            <div class="flex items-center space-x-4 sm:space-x-8">
+    <nav class="flex items-center justify-between px-4 sm:px-8 lg:px-12 xl:px-16 py-4 sm:py-6 w-full mx-auto relative">
+            <!-- <div class="flex items-center justify-between w-full max-w-7xl lg:max-w-[1100px] xl:max-w-[1440px] "> -->
+            <div class="flex items-center space-x-4 sm:space-x-8 lg:space-x-10 xl:space-x-12">
                   <!-- Hamburger Menu Button (Mobile) -->
                 <label for="mobile-menu-toggle" class="md:hidden flex flex-col justify-center 
                             items-center w-8 h-8 space-y-1.5 cursor-pointer z-[60]">
@@ -31,7 +32,7 @@
                 <div class="flex items-center space-x-2">
                     <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain" />
                 </div>
-                <div class="hidden md:flex space-x-6 text-[var(--navText-color)] text-sm font-medium">
+                <div class="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--navText-color)] text-sm font-medium">
                     <a href="#">About Us</a>
                     <a href="#">Pricing</a>
                     <a href="#">Blogs</a>
@@ -44,13 +45,14 @@
                 </div>
             </div>
             <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-                <button class="group bg-[var(--primary-color)] text-white px-3 sm:px-4 py-2 rounded-full transition 
+                <button class="group bg-[var(--primary-color)] text-white px-3 sm:px-4 lg:px-5 py-2 rounded-full transition 
                     flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                     <span class="hidden sm:inline">Buy this template</span>
                     <span class="sm:hidden">Buy</span>
                     <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
                 </button>
             </div>
+            <!-- </div> -->
             
     </nav>
    <!-- Mobile Menu Overlay (CSS-only) -->
@@ -852,151 +854,151 @@
             </div>  
             <div class="flex flex-col space-y-4 text-start w-full lg:w-auto">
                 <!-- FAQ Item 1 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-1" class="faq-toggle hidden" />
-                    <label for="faq-1" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-[var(primaryText-color)]">What is included in the free Starter plan?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-1" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-[var(primaryText-color)] pr-2">What is included in the free Starter plan?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                                    bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute -right-8 top-1 sm:top-5 sm:-translate-y-1/2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            The Starter plan includes unlimited projects, basic task management, real-time <br class="hidden lg:inline">
-                            collaboration, and access to our community support. It's perfect for individuals and small <br class="hidden lg:inline">
+                            The Starter plan includes unlimited projects, basic task management, real-time <br class="hidden xl:inline">
+                            collaboration, and access to our community support. It's perfect for individuals and small <br class="hidden xl:inline">
                             teams getting started with project management sample link.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 2 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-2" class="faq-toggle hidden" />
-                    <label for="faq-2" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">Can I upgrade my plan at any time?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-2" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">Can I upgrade my plan at any time?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            Yes, you can upgrade your plan at any time to access more advanced features and <br class="hidden lg:inline">
-                            support. Simply go to your ccount settings and choose the plan that best fits your <br class="hidden lg:inline">
+                            Yes, you can upgrade your plan at any time to access more advanced features and <br class="hidden xl:inline">
+                            support. Simply go to your ccount settings and choose the plan that best fits your <br class="hidden xl:inline">
                            needs.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 3 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-3" class="faq-toggle hidden" />
-                    <label for="faq-3" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">How does the free trial for the Teams plan work?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-3" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">How does the free trial for the Teams plan work?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            When you sign up for the Teams plan, you get a 14-day free trial with access to all the  <br class="hidden lg:inline">
-                            features included in the plan. You can decide to continue with the Teams plan, upgrade to <br class="hidden lg:inline">
+                            When you sign up for the Teams plan, you get a 14-day free trial with access to all the  <br class="hidden xl:inline">
+                            features included in the plan. You can decide to continue with the Teams plan, upgrade to <br class="hidden xl:inline">
                             the Business plan, or revert to the Starter plan after the trial period.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 4 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-4" class="faq-toggle hidden" />
-                    <label for="faq-4" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">What payment methods do you accept?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-4" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">What payment methods do you accept?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            We accept all major credit cards, including Visa, MasterCard, American Express, and<br class="hidden lg:inline">
+                            We accept all major credit cards, including Visa, MasterCard, American Express, and<br class="hidden xl:inline">
                             Discover. Payments are processed securely through our payment gateway.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 5 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-5" class="faq-toggle hidden" />
-                    <label for="faq-5" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">Is my data secure?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-5" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">Is my data secure?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            Yes, we take data security very seriously. Our platform uses advanced security measures, <br class="hidden lg:inline">
-                            including encryption and regular security audits, to ensure your data is protected at all <br class="hidden lg:inline">
+                            Yes, we take data security very seriously. Our platform uses advanced security measures, <br class="hidden xl:inline">
+                            including encryption and regular security audits, to ensure your data is protected at all <br class="hidden xl:inline">
                             times.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 6 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-6" class="faq-toggle hidden" />
-                    <label for="faq-6" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">Do you offer support if I need help?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-6" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">Do you offer support if I need help?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            Absolutely! The Starter plan includes community support, while the Teams and Business  <br class="hidden lg:inline">
-                            plans offer priority support. Business plan users also have access to a dedicated account <br class="hidden lg:inline">
+                            Absolutely! The Starter plan includes community support, while the Teams and Business  <br class="hidden xl:inline">
+                            plans offer priority support. Business plan users also have access to a dedicated account <br class="hidden xl:inline">
                             manager for personalized assistance.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 7 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-7" class="faq-toggle hidden" />
-                    <label for="faq-7" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">Can I cancel my subscription at any time?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-7" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">Can I cancel my subscription at any time?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            Yes, you can cancel your subscription at any time from your account settings. Your <br class="hidden lg:inline">
+                            Yes, you can cancel your subscription at any time from your account settings. Your <br class="hidden xl:inline">
                             account will remain active until the end of the current billing period.
                         </p>
                     </div>
                 </div>
                 <!-- FAQ Item 8 -->
-                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
+                <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-12 sm:pr-14 relative border-b border-white/20">
                     <input type="checkbox" id="faq-8" class="faq-toggle hidden" />
-                    <label for="faq-8" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-[18.73px] font-medium text-white">What integrations do you offer?</h3>
-                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
-                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
+                    <label for="faq-8" class="faq-label flex items-start sm:items-center justify-between cursor-pointer gap-3">
+                        <h3 class="text-base sm:text-[18.73px] font-medium text-white pr-2">What integrations do you offer?</h3>
+                        <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
+                        bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-1 sm:top-5 sm:-translate-y-1/2 -right-8">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
                             <img src="assets/Vectors/X_Vector.svg" class="faq-x w-[10px] h-[10px] absolute transition-all duration-300 opacity-0"/>
                         </span>
                     </label>
                     <div class="faq-content">
                         <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
-                            Our platform integrates seamlessly with a variety of tools and platforms, including Slack,<br class="hidden lg:inline">
-                            Google Drive, Dropbox, and many more. The Business plan includes full access to all <br class="hidden lg:inline">
+                            Our platform integrates seamlessly with a variety of tools and platforms, including Slack,<br class="hidden xl:inline">
+                            Google Drive, Dropbox, and many more. The Business plan includes full access to all <br class="hidden xl:inline">
                             integrations.
                         </p>
                     </div>
@@ -1141,7 +1143,11 @@
                 spaceBetween: 25,
                 centeredSlides: true,
                 grabCursor: true,
-                speed: 800,
+                speed: 1000,
+                autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+                },
                 slideToClickedSlide: true,
                 pagination: {
                     el: ".swiper-pagination",
