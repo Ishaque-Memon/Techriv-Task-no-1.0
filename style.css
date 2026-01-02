@@ -3,31 +3,37 @@
 
 
 
-body {
-    font-family: 'Inter', sans-serif;
+
+html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Default heading sizes (Tailwind resets these) */
-h1 {
-    font-size: 2.25rem; /* 36px */
+/* 36px */
+/* h1 {
+    font-size: 2.25rem; 
     line-height: 2.5rem;
     font-weight: 500;
-}
+} */
 
-h2 {
-    font-size: 1.875rem; /* 30px */
+/* 30px */
+/* h2 {
+    font-size: 1.875rem; 
     line-height: 2.25rem;
     font-weight: 500;
-}
+} */
 
-h3 {
-    font-size: 1.25rem; /* 20px */
+/* 20px */
+/* h3 {
+    font-size: 1.25rem; 
     line-height: 1.75rem;
     font-weight: 500;
-}
+} */
 
 .heading{
     font-family: 'Playfair Display';
@@ -49,21 +55,63 @@ h3 {
     --fadedbg-color: #14151A;
 }
 
-
-.ellipse-2 {
+/* Ellipse Overlay using SVG */
+.ellipse-overlay {
     position: absolute;
-    width: 100%;
-    max-width: 855.27px;
-    height: 955.16px;
-    left: 50%;
-    transform: translateX(-50%) scaleY(-1);
-    top: -14.29px;
-    background: linear-gradient(180deg, rgba(22, 22, 22, 0) 22.02%, #992E00 52.08%, #CF4B13 67.32%, #FF4C00 83.41%);
-    mix-blend-mode: color-dodge;
-    opacity: 0.82;
-    filter: blur(116.794px);
+    top: -230px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 1124px;
+    margin: 0 auto;
     z-index: -1;
     pointer-events: none;
+    display: flex;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+.ellipse-img {
+    width: 100%;
+    max-width: 1124px;
+    height: auto;
+    display: block;
+    /* Firefox smoothing optimizations */
+    image-rendering: optimizeQuality;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    /* Force GPU acceleration */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Ellipse responsive adjustments */
+@media (max-width: 768px) {
+    .ellipse-overlay {
+        top: -100px;
+        max-width: 600px;
+    }
+    
+    .ellipse-img {
+        max-width: 600px;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .ellipse-overlay {
+        top: -50px;
+        max-width: 400px;
+    }
+    
+    .ellipse-img {
+        max-width: 400px;
+        transform: scale(1.5);
+    }
 }
 
 /* Infinite Marquee - seamless loop */
@@ -84,12 +132,19 @@ h3 {
 }
 
 /* Mobile Menu - CSS Only Toggle */
+
+body:has(#mobile-menu-toggle:checked) {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
 #mobile-menu-toggle:checked ~ .mobile-menu-overlay {
     opacity: 1;
     pointer-events: auto;
-    display: flex;
 }
-
+/* Hamburger Icon Animation */
 #mobile-menu-toggle:checked ~ nav .hamburger-bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }

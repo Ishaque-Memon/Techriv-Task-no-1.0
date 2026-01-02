@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   </head>
-    <body class="text-white font-sans relative overflow-x-hidden overflow-y-auto before:content-[''] 
+    <body class="text-[var(--primaryText-color)] font-sans relative overflow-y-auto  before:content-['']
     before:fixed before:top-0 before:left-0 before:right-0    
-    before:bottom-0 before:bg-[#0a0a0a] before:z-[-2]">
-    <!-- Ellipse  -->
-    <div class="ellipse-2 max-w-full"></div>
+    before:bottom-0 before:bg-[#0a0a0a] before:z-[-2]
+    ">
+    <!-- Ellipse Overlay -->
+    <div class="ellipse-overlay">
+        <img src="assets/Ellipse/Ellipse2.svg" alt="" class="ellipse-img" />
+    </div>
    <!-- Mobile Menu Checkbox (hidden) -->
     <input type="checkbox" id="mobile-menu-toggle" class="hidden" />
 
@@ -50,23 +53,21 @@
             </div>
             
     </nav>
-
-    <!-- Mobile Menu Overlay (CSS-only) -->
-    <div class="mobile-menu-overlay fixed inset-0 bg-[#0a0a0a]/95 z-40 
+   <!-- Mobile Menu Overlay (CSS-only) -->
+    <div class="mobile-menu-overlay fixed inset-0 bg-[#0a0a0a]/95 z-40 flex 
                 flex-col items-center justify-center space-y-6
                 opacity-0 pointer-events-none transition-opacity 
-                 duration-300 hidden w-full h-full overflow-hidden">
+                 duration-300">
         
         <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">About Us</a>
         <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Pricing</a>
         <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Blogs</a>
         <a href="#" class="text-white text-xl font-medium hover:text-[var(--primary-color)]">Pages</a>
     </div>
-
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto px-4 sm:px-8 pt-12 sm:pt-20 pb-6 text-center flex flex-col items-center">
             <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgba(253,185,156,0.2)] px-1 py-1 pr-2 rounded-full">
-                <span class="bg-[var(--primary-color)] text-white text-xs px-2 rounded-full">
+                <span class="bg-[var(--primary-color)] text-white text-xs px-[8px] py-[1px] rounded-full">
                     Update
                 </span>
                 <a href="#" class="text-[var(--primaryText-color)] text-xs 
@@ -79,32 +80,31 @@
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-3xl sm:text-5xl md:text-6xl font-normal mb-4 sm:mb-6">
+            <h1 class="text-3xl sm:text-5xl md:text-[56px] font-medium mb-4 sm:mb-6">
                 Effortless Project<br>
                 Management for<br>
-                <span class="text-[var(--primary-color)] heading">Digital Agencies</span>
+                <span class="text-[var(--primary-color)] heading text-[28px] sm:text-[52px]"]>Digital Agencies</span>
             </h1>
 
             <!-- Subheading -->
-            <p class="text-base sm:text-xl md:text-2xl font-light text-[var(--paText-color)] 
-            text-gray-400 max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
+            <p class="text-[10px] sm:text-[16px] font-normal text-[var(--navText-color)] opacity-80 mb-6 sm:mb-8 px-2">
                 Streamline your projects, maximize efficiency, 
-                and elevate your business with our cutting-edge project 
-                management tool designed for the real estate industry.
+                and elevate your <br> business with our cutting-edge project 
+                management tool <br> designed for the real estate industry.
             </p>
 
             <!-- User Avatar -->
             <div class="flex flex-col items-center space-y-4 sm:space-y-6 mb-10 sm:mb-16">
                 <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                    <div class="flex -space-x-2">
-                        <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black object-cover">
+                    <div class="flex -space-x-2 sm:w-[100px] sm:h-[25px] mr-[5px]">
+                        <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
                     </div>
-                    <span class="text-sm sm:text-md 
-                    text-[var(--primaryText-color)] font-light">
+                    <span class="text-[11px] 
+                    text-[var(--navText-color)] font-normal">
                     2000+ Active Users
                     </span>
                 </div>
@@ -119,7 +119,8 @@
 
             </div>
             <!-- Dashboard Tasks Preview -->
-           <div class="relative w-full p-10 bg-[#0a0a0a]"> <div class="max-w-full flex bg-[#1a1a1a] pr-[1px] pl-[1px] pt-[1.5px] pb-[1px] rounded-2xl relative overflow-hidden shadow-2xl">
+           <div class="relative w-full p-5 bg-[#0a0a0a]"> 
+            <div class="max-w-full flex bg-[#1a1a1a] pr-[1px] pl-[1px] pt-[1.5px] pb-[1px] rounded-2xl relative overflow-hidden shadow-2xl">
         
                 <div class="absolute -top-10 -left-10 w-62 h-82 
                             bg-[var(--primary-color)] opacity-80 rounded-full 
@@ -199,34 +200,37 @@
     </section>
 
     <!-- Features Section -->
-    <section class="max-w-5xl lg:max-w-none mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-6 text-center flex flex-col items-center">
-            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full">
-            <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
-                <span>
-                    See what's new in  
-                    <span class="text-[16px]"> 
-                        Grauberg 
-                    </span>
-                </span>
+    <section class="max-w-5xl lg:max-w-none mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-6 text-center flex flex-col items-center overflow-x-hidden">
+        <div class="w-full flex flex-col items-center">  
+            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
+                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
+                    <div class="px-[7.8px] py-[3.12px]">
+                        <p>See what's new in  
+                        <span class="text-[16px]"> 
+                            Grauberg 
+                        </span>
+                    </p>
+                    </div>
+                </div>
             </div>
+            <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
+                <!-- Main Heading -->
+                <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                    Revolutionize  your<br>
+                    <span class="text-[var(--primary-color)] heading">Project Management</span>
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
+                    Unlock seamless collaboration and unparalleled <br class="hidden sm:block">
+                    efficiency with our intuitive canvas board.
+                </p>
             </div>
-
-            <!-- Main Heading -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-normal mb-4 sm:mb-6 leading-tight">
-                Revolutionize  your<br>
-                <span class="text-[var(--primary-color)] heading">Project Management</span>
-            </h1>
-
-            <!-- Subheading -->
-            <p class="text-sm sm:text-base font-light text-[var(--paText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
-                Unlock seamless collaboration and unparalleled <br class="hidden sm:block">
-                efficiency with our intuitive canvas board.
-            </p>
-
-            <div class="flex flex-col gap-6 sm:gap-10 w-full">
+        </div>
+            <div class="flex flex-col gap-6 sm:gap-10 w-full ">
                 <!-- First Card Row -->
           <div class="flex flex-col lg:flex-row items-stretch bg-[var(--SecondaryBgcolor)] rounded-2xl sm:rounded-3xl overflow-hidden
-            w-full max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 border">
+            w-full max-w-[calc(100vw-2rem)] sm:max-w-[calc(100vw-4rem)] lg:max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 borde flex-wrap ">
             <!-- left image -->
             <div class="w-full lg:w-1/2 h-[180px] sm:h-[240px] lg:h-full flex-shrink-0">
                 <img src="assets/Image_Cards/Process_Card/Card.svg" alt="Process Card"
@@ -235,25 +239,37 @@
 
             <!-- right content -->
             <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-4 sm:space-y-5 text-start p-5 sm:p-8 lg:p-10 lg:pl-10">
-                <div class="inline-flex items-center self-start bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full border border-white/5">
+                <!-- <div class="inline-flex items-center self-start bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full border border-white/5">
                 <span class="text-[var(--primaryText-color)] text-xs sm:text-sm font-medium">
                     See what's new in 
                     <span class="text-[16px]"> 
                         Grauberg 
                     </span>
                 </span>
+            </div> -->
+            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] border border-white/5 rounded-full w-fit">
+                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
+                    <div class="px-[7.8px] py-[3.12px]">
+                        <p>See what's new in  
+                        <span class="text-[16px]"> 
+                            Grauberg 
+                        </span>
+                    </p>
+                    </div>
+                </div>
             </div>
 
-                <h2 class="text-xl sm:text-2xl md:text-[28px] font-medium text-white leading-tight">
-                    Seamless & Collaborative Canvas Board
+                <h2 class="text-xl sm:text-2xl md:text-[24.97px] font-medium text-white leading-tight">
+                    Seamless & Collaborative <br class="hidden lg:inline"/>Canvas Board
                 </h2>
 
                 <p class="text-sm sm:text-[15px] font-light text-[var(--paText-color)] leading-relaxed opacity-80">
-                Experience the ultimate in project visualization and team collaboration. 
-                Our intuitive canvas board makes it easy to map out tasks, 
-                track progress, and ensure everyone is on the same page. 
-                With real-time updates and drag-and-drop functionality, 
-                your team can work together effortlessly, no matter where they are.
+                Experience the ultimate in project visualization and team <br class="hidden xl:inline"/>
+                collaboration. Our intuitive canvas board makes it easy to map <br class="hidden xl:inline"/>
+                out tasks, track progress, and ensure everyone is on the same <br class="hidden xl:inline"/>
+                page. With real-time updates and drag-and-drop functionality, <br class="hidden xl:inline"/>
+                your team can work together effortlessly, no matter where they <br class="hidden xl:inline"/>
+                are.
                 </p>
 
                 <div class="group bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full self-start">
@@ -265,7 +281,7 @@
                 </div>
             </div>
             </div>     
-                        <!-- Feature Cards -->
+            <!-- Feature Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 
             text-start w-full max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Real-Time Collaboration -->
@@ -331,22 +347,30 @@
     <!-- Testimonials Section -->
     <section class="py-16 sm:py-24 overflow-hidden">
             <!-- Header Box -->
-            <div class="max-w-4xl mx-auto px-4 sm:px-8 mb-10 sm:mb-16">
-                <div class="py-8 sm:py-12 px-6 sm:px-12 text-center">
-                    <div class="inline-flex items-center mb-6 bg-white/5 px-3 py-1 rounded-full">
-                        <span class="text-white text-xs">Real Feedback from Real Users</span>
+            <div class="w-full flex flex-col items-center">  
+            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
+                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
+                    <div class="px-[7.8px] py-[3.12px]">
+                        <p>Real Feedback from Real Users</p>
                     </div>
-                    
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4">
-                        What <span class="text-[var(--primary-color)] heading">Our Clients</span> Are Saying
-                    </h2>
-                    
-                    <p class="text-sm sm:text-base font-light text-[var(--paText-color)] max-w-xl mx-auto">
-                        Our clients have experienced remarkable improvements in<br class="hidden sm:block">
-                        their project management and overall productivity.
-                    </p>
                 </div>
             </div>
+            <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
+                <!-- Main Heading -->
+                <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                    What
+                    <span class="text-[var(--primary-color)] heading">Our Clients</span>
+                    Are Saying
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2 text-center">
+                    Our clients have experienced remarkable improvements in 
+                    <br class="hidden sm:block">
+                    their project management and overall productivity.
+                </p>
+            </div>
+        </div>
 
             <!-- Testimonial Carousel -->
             <div class="swiper testimonialSwiper w-full mx-auto">
@@ -505,25 +529,32 @@
     </section>
         <!-- Features Section - 2nd -->
     <section class="w-full mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-16 text-center flex flex-col items-center bg-[var(--thirdBgcolor)]">
-            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 
-            bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full">
-             <div class="text-[var(--primaryText-color)] text-sm 
-             transition flex items-center space-x-1">
-                <span>See what's new in  <span class="text-[16px]"> Grauberg </span></span>
-             </div>
+            <div class="w-full flex flex-col items-center">  
+                <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
+                    <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
+                        <div class="px-[7.8px] py-[3.12px]">
+                            <p>See what's new in  
+                            <span class="text-[16px]"> 
+                                Grauberg 
+                            </span>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
+                    <!-- Main Heading -->
+                    <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                        Unleash the full potential <br> of
+                        <span class="text-[var(--primary-color)] heading">Your Projects</span>
+                    </h1>
+
+                    <!-- Subheading -->
+                    <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
+                        Discover the powerful features that make our project  <br class="hidden sm:block">
+                        efficiency with our intuitive canvas board.
+                    </p>
+                </div>
             </div>
-
-            <!-- Main Heading -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
-                Unleash the full potential<br>of
-                <span class="text-[var(--primary-color)] heading">Your Projects</span>
-            </h1>
-
-            <!-- Subheading -->
-            <p class="text-sm sm:text-base font-light text-[var(--navText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
-                Discover the powerful features that make our project <br class="hidden sm:block">
-                management tool indispensable for digital agencies.
-            </p>
 
             <!-- Feature Cards Grid - centered -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-start max-w-[1100px] 
@@ -603,28 +634,28 @@
     <section class="w-full mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-16 text-center flex flex-col 
                     items-center bg-[var(--thirdBgcolor)]">
 
-            <!-- Main Heading -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
-                Choose the perfect 
-                <br>
-                plan for 
-                <span class="text-[var(--primary-color)] heading">Your Agency</span>
-            </h1>
+            <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
+                    <!-- Main Heading -->
+                    <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                        Choose the perfect <br>plan for
+                        <span class="text-[var(--primary-color)] heading">Your Agency</span>
+                    </h1>
 
-            <!-- Subheading -->
-            <p class="text-sm sm:text-base font-light text-[var(--navText-color)] max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
-                Flexible pricing options to meet the needs of every <br class="hidden sm:block">
-                team, from startups to large agencies.
-            </p>
+                    <!-- Subheading -->
+                    <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
+                        Flexible pricing options to meet the needs of every <br class="hidden sm:block">
+                        team, from startups to large agencies.
+                    </p>
+            </div>
             <div class="flex flex-wrap justify-center items-end gap-6 w-full mt-8 sm:mt-12 px-4 sm:px-8 max-w-7xl mx-auto">
             
             <div class="flex flex-col bg-[var(--cardbgcolor)] rounded-3xl p-6 border-white/10 border 
-                         w-full max-w-[325px] h-full min-h-[330px] mb-0 sm:mb-10">
-                <div class="flex flex-col gap-2 items-start mb-6">
-                    <p class="text-xs font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">
+                         sm:w-full max-w-[325px] h-full min-h-[330px] mb-0 sm:mb-10">
+                <div class="flex flex-col  items-start mb-6">
+                    <p class="text-[14px] font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">
                         Starter
                     </p>
-                    <h2 class="text-5xl font-medium text-white">
+                    <h2 class="text-[37.41px] font-medium text-white">
                         Free
                     </h2>
                 </div>
@@ -652,10 +683,10 @@
                         <span class="text-xs text-[var(--primaryText-color)]">Community Support</span>
                     </li>
                 </ul>
-                <button class="bg-white text-black text-sm font-semibold rounded-lg px-4 py-2 w-full 
-                               hover:bg-gray-200 transition cursor-pointer">
-                    Start Your Free Trial
-                </button>
+                <button class="bg-white text-black text-[11px] font-medium rounded-lg px-[85.84px] py-[9.36px] w-fit 
+                              hover:bg-gray-200 transition cursor-pointer leading-[15.61px] whitespace-nowrap">
+                Start Your Free Trial
+               </button>
             </div>
 
             <div class="flex flex-col bg-[#0A0A0A] rounded-3xl p-8 border border-[#FF4C00]/50 
@@ -666,18 +697,18 @@
                 <div class="absolute bottom-[-65px] left-1/2 -translate-x-1/2 w-[360px] h-[200px] rounded-full pointer-events-none" 
                      style="background: radial-gradient(circle, rgba(255, 76, 0, 0.4) 0%, transparent 65%); filter: blur(100px);"></div>
                 
-                <div class="flex flex-col gap-1 items-start mb-6 relative"> 
-                    <p class="text-xs font-normal uppercase tracking-wider text-[var(--primary-color)]">
+                <div class="flex flex-col items-start mb-6 relative"> 
+                    <p class="text-[14px] font-normal uppercase tracking-wider text-[var(--primary-color)]">
                         Teams
                     </p>
-                    <div class="flex items-baseline text-white">
-                        <span class="text-xs font-normal mr-1 absolute left-[-10px]">
+                    <div class="flex items-baseline text-white ml-2">
+                        <span class="text-xs font-normal mr-1 absolute left-[-1px] top-8">
                             $
                         </span>
-                        <h2 class="text-6xl font-medium">
+                        <h2 class="text-[37.41px] font-medium">
                             45
                         </h2>
-                        <span class="text-xs font-medium ml-1 absolute left-9 top-5">
+                        <span class="text-xs font-medium ml-1 absolute left-13 top-8">
                             .00
                         </span>
                     </div>
@@ -724,19 +755,19 @@
             </div>
 
             <div class="flex flex-col bg-[var(--cardbgcolor)] rounded-3xl p-6 border-white/10 border 
-            w-full max-w-[325px] h-full min-h-[420px] mb-0 sm:mb-6">
-                <div class="flex flex-col gap-1 items-start mb-6 relative">
-                    <p class="text-xs font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">
+            sm:w-full max-w-[325px] h-full min-h-[420px] mb-0 sm:mb-6">
+                <div class="flex flex-col items-start mb-6 relative">
+                    <p class="text-[14px] font-normal uppercase tracking-wider text-[var(--primaryText-color)] opacity-80">
                         Business
                     </p>
-                    <div class="flex items-baseline text-white">
-                        <span class="text-xs font-normal mr-1 absolute  left-[-10px]">
+                    <div class="flex items-baseline text-white ml-2">
+                        <span class="text-xs font-normal mr-1 absolute  left-[-1px] top-8">
                             $
                         </span>
-                        <h2 class="text-5xl font-medium">
+                        <h2 class="text-[37.41px] font-medium">
                             90
                         </h2>
-                        <span class="text-xs font-normal ml-1 absolute left-9 top-5">
+                        <span class="text-xs font-normal ml-1 absolute left-13 top-8">
                             .00
                         </span>
                     </div>
@@ -790,10 +821,11 @@
                             </span>
                         </li>
                     </ul>
-                <button class="bg-white text-black text-sm font-semibold rounded-lg 
-                               px-4 py-2 w-full hover:bg-gray-200 transition cursor-pointer">
-                    Start Your Free Trial
-                </button>
+               <button class="bg-white text-black text-[11px] font-medium rounded-lg px-[85.84px] py-[9.36px] w-fit 
+               hover:bg-gray-200 transition cursor-pointer leading-[15.61px] whitespace-nowrap">
+                Start Your Free Trial
+               </button>
+
             </div>
 
         </div>
@@ -806,14 +838,14 @@
             <!-- Main Heading -->
         <div class="flex flex-col lg:flex-row text-start lg:space-x-40">
             <div class="max-w-full shrink-0 ml-4 lg:ml-0 mb-8 lg:mb-0">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4">
+            <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4">
                 Frequently        
                 <br>
                 <span class="text-[var(--primary-color)] heading">Asked Question</span>
             </h1>
 
             <!-- Subheading -->
-            <p class="text-sm sm:text-base font-light text-[var(--navText-color)] max-w-2xl mb-6 sm:mb-8">
+            <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl mb-6 sm:mb-8 leading-[21.85px]">
                 Find answers to the most common questions<br class="hidden sm:block">
                 about our project management tool.
             </p>
@@ -823,7 +855,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-1" class="faq-toggle hidden" />
                     <label for="faq-1" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-[var(primaryText-color)]">What is included in the free Starter plan?</h3>
+                        <h3 class="text-[18.73px] font-medium text-[var(primaryText-color)]">What is included in the free Starter plan?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -831,7 +863,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             The Starter plan includes unlimited projects, basic task management, real-time <br class="hidden lg:inline">
                             collaboration, and access to our community support. It's perfect for individuals and small <br class="hidden lg:inline">
                             teams getting started with project management sample link.
@@ -842,7 +874,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-2" class="faq-toggle hidden" />
                     <label for="faq-2" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">Can I upgrade my plan at any time?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">Can I upgrade my plan at any time?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -850,7 +882,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             Yes, you can upgrade your plan at any time to access more advanced features and <br class="hidden lg:inline">
                             support. Simply go to your ccount settings and choose the plan that best fits your <br class="hidden lg:inline">
                            needs.
@@ -861,7 +893,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-3" class="faq-toggle hidden" />
                     <label for="faq-3" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">How does the free trial for the Teams plan work?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">How does the free trial for the Teams plan work?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -869,7 +901,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             When you sign up for the Teams plan, you get a 14-day free trial with access to all the  <br class="hidden lg:inline">
                             features included in the plan. You can decide to continue with the Teams plan, upgrade to <br class="hidden lg:inline">
                             the Business plan, or revert to the Starter plan after the trial period.
@@ -880,7 +912,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-4" class="faq-toggle hidden" />
                     <label for="faq-4" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">What payment methods do you accept?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">What payment methods do you accept?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -888,7 +920,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             We accept all major credit cards, including Visa, MasterCard, American Express, and<br class="hidden lg:inline">
                             Discover. Payments are processed securely through our payment gateway.
                         </p>
@@ -898,7 +930,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-5" class="faq-toggle hidden" />
                     <label for="faq-5" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">Is my data secure?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">Is my data secure?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -906,7 +938,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             Yes, we take data security very seriously. Our platform uses advanced security measures, <br class="hidden lg:inline">
                             including encryption and regular security audits, to ensure your data is protected at all <br class="hidden lg:inline">
                             times.
@@ -917,7 +949,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-6" class="faq-toggle hidden" />
                     <label for="faq-6" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">Do you offer support if I need help?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">Do you offer support if I need help?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -925,7 +957,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             Absolutely! The Starter plan includes community support, while the Teams and Business  <br class="hidden lg:inline">
                             plans offer priority support. Business plan users also have access to a dedicated account <br class="hidden lg:inline">
                             manager for personalized assistance.
@@ -936,7 +968,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-7" class="faq-toggle hidden" />
                     <label for="faq-7" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">Can I cancel my subscription at any time?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">Can I cancel my subscription at any time?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -944,7 +976,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             Yes, you can cancel your subscription at any time from your account settings. Your <br class="hidden lg:inline">
                             account will remain active until the end of the current billing period.
                         </p>
@@ -954,7 +986,7 @@
                 <div class="faq-item mb-3 pt-4 pb-6 pl-4 pr-11 relative border-b border-white/20">
                     <input type="checkbox" id="faq-8" class="faq-toggle hidden" />
                     <label for="faq-8" class="faq-label flex items-center justify-between cursor-pointer">
-                        <h3 class="text-base sm:text-lg font-medium text-white">What integrations do you offer?</h3>
+                        <h3 class="text-[18.73px] font-medium text-white">What integrations do you offer?</h3>
                         <span class="faq-icon flex items-center justify-center w-8 h-8 rounded-full  
                         bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] absolute top-0 right-0 mt-2 mr-2">
                             <img src="assets/Vectors/Dropdown_Arrow_Vector.svg" class="faq-arrow w-[10px] h-[10px] transition-all duration-300"/>
@@ -962,7 +994,7 @@
                         </span>
                     </label>
                     <div class="faq-content">
-                        <p class="text-[var(--navText-color)] text-xs leading-relaxed">
+                        <p class="text-[var(--navText-color)] text-[12.49px] leading-relaxed">
                             Our platform integrates seamlessly with a variety of tools and platforms, including Slack,<br class="hidden lg:inline">
                             Google Drive, Dropbox, and many more. The Business plan includes full access to all <br class="hidden lg:inline">
                             integrations.
@@ -979,7 +1011,7 @@
     
                 <!-- First Card Row -->
           <div class="flex flex-col lg:flex-row items-stretch bg-[var(--SecondaryBgcolor)] rounded-2xl sm:rounded-3xl overflow-hidden
-            w-full max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 border">
+            w-full max-w-[calc(100vw-2rem)] sm:max-w-[calc(100vw-4rem)] lg:max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 border">
             <!-- left image -->
             <div class="w-full lg:w-1/2 h-[180px] sm:h-[240px] lg:h-full flex-shrink-0">
                 <img src="assets/Image_Cards/Process_Card/Card.svg" alt="Process Card"
@@ -990,7 +1022,7 @@
             <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-4 sm:space-y-5 text-start p-5 sm:p-8 lg:p-10 lg:pl-10">
                 
 
-                <h2 class="text-xl sm:text-2xl md:text-[28px] font-medium text-white leading-tight">
+                <h2 class="text-xl sm:text-2xl md:text-[24.97px] font-medium text-white leading-tight">
                     Ready to transform your <br>
                     <span class="text-[var(--primary-color)] heading"> 
                     Project Management?
@@ -998,13 +1030,13 @@
                 </h2>
 
                 <p class="text-sm sm:text-[15px] font-medium text-[var(--primaryText-color)] leading-relaxed">
-                Join the growing community of digital agencies <br>
-                revolutionizing their workflows with our powerful, <br>
+                Join the growing community of digital agencies <br class="hidden xl:inline"/>
+                revolutionizing their workflows with our powerful, <br class="hidden xl:inline"/>
                 AI-driven tool.
                 </p>
                 <p class="text-sm sm:text-[15px] font-normal text-[var(--primaryText-color)] leading-relaxed opacity-80">
-                Experience the benefits firsthand with our free Starter plan. <br>
-                Upgrade anytime to access advanced features and premium<br>
+                Experience the benefits firsthand with our free Starter plan. <br class="hidden xl:inline"/>
+                Upgrade anytime to access advanced features and premium<br class="hidden xl:inline"/>
                 support tailored to your team’s needs.
                 </p>
                 <button class="group w-fit bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5
@@ -1035,50 +1067,50 @@
                     <div class="flex items-center gap-2 mb-6">
                         <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain"/>
                     </div>
-                    <p class="text-xs text-[var(--primaryText-color)] opacity-80 leading-relaxed">
+                    <p class="text-[12.49px] text-[var(--primaryText-color)] opacity-80 leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                 </div>
                 
             <div class="flex flex-col">
-                <h4 class="text-sm font-medium text-[var(--navText-color)] mb-6 opacity-40">Pages</h4>
+                <h4 class="text-[12.49px] font-medium text-[var(--navText-color)] mb-6 opacity-40">Pages</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">Home</a></li>
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">Pricing Page</a></li>
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">About Page</a></li>
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">Signup Page</a></li>
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">Blog</a></li>
-                    <li><a href="#" class="text-xs text-[var(--navText-color)] hover:text-white transition">Blog Post Page</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">Pricing Page</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">About Page</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">Signup Page</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">Blog</a></li>
+                    <li><a href="#" class="text-[11px] text-[var(--navText-color)] hover:text-white transition">Blog Post Page</a></li>
                 </ul>
             </div>
 
             <div class="flex flex-col">
-                <h4 class="text-sm font-medium text-[var(--navText-color)] mb-6 opacity-40">Other</h4>
+                <h4 class="text-[12.49px] font-medium text-[var(--navText-color)] mb-6 opacity-40">Other</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">404 Page</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Privacy Policy</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Terms</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">404 Page</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Terms</a></li>
                 </ul>
             </div>
 
             <div class="flex flex-col">
-                <h4 class="text-sm font-medium text-[var(--navText-color)] mb-6 opacity-40">Utility</h4>
+                <h4 class="text-[12.49px] font-medium text-[var(--navText-color)] mb-6 opacity-40">Utility</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Style Guide</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Licencing</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Change Log</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Instructions</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Style Guide</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Licencing</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Change Log</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Instructions</a></li>
                 </ul>
             </div>
 
             <div class="flex flex-col">
-                <h4 class="text-sm font-medium text-[var(--navText-color)] mb-6 opacity-40">Media</h4>
+                <h4 class="text-[12.49px] font-medium text-[var(--navText-color)] mb-6 opacity-40">Media</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Facebook</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Linkedin</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Github</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Youtube</a></li>
-                    <li><a href="#" class="text-xs font-medium text-[var(--navText-color)] hover:text-white transition">Slack</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Facebook</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Linkedin</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Github</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Youtube</a></li>
+                    <li><a href="#" class="text-[11px] font-medium text-[var(--navText-color)] hover:text-white transition">Slack</a></li>
                 </ul>
             </div>
 
@@ -1089,11 +1121,11 @@
 
             <!-- Footer Bottom -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p class="text-xs font-medium text-[var(--navText-color)]">© 2024 - Powered by Webflow</p>
+                <p class="text-[11px] font-medium text-[var(--navText-color)]">© 2024 - Powered by Webflow</p>
                 <div class="flex gap-6">
-                    <a href="#" class="text-xs font-medium text-[var(--navText-color)] underline hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-xs font-medium text-[var(--navText-color)] underline hover:text-white transition">Terms of Service</a>
-                    <a href="#" class="text-xs font-medium text-[var(--navText-color)] underline hover:text-white transition">Cookies Settings</a>
+                    <a href="#" class="text-[11px] font-medium text-[var(--navText-color)] underline hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-[11px] font-medium text-[var(--navText-color)] underline hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-[11px] font-medium text-[var(--navText-color)] underline hover:text-white transition">Cookies Settings</a>
                 </div>
             </div>
         </div> 
