@@ -30,7 +30,7 @@
                     <span class="hamburger-bar block w-5 h-0.5 bg-white transition-all duration-300 origin-center"></span>
                 </label>
                 <div class="flex items-center space-x-2">
-                    <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain" />
+                    <img src="assets/Website_Logo/Frame14.svg" alt="Logo" class="w-16 h-4 object-contain"/>
                 </div>
                 <div class="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--navText-color)] text-sm font-medium">
                     <a href="#">About Us</a>
@@ -44,17 +44,19 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-                <button class="group bg-[var(--primary-color)] text-white px-3 sm:px-4 lg:px-5 py-2 rounded-full transition 
-                    flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+            <div class="bg-[rgba(253,185,156,0.1)] px-1 py-1 rounded-full">
+                <button class="group bg-[var(--primary-color)] text-[var(--primaryText-color)] py-[10px] px-[16px] rounded-full transition flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                     <span class="hidden sm:inline">Buy this template</span>
                     <span class="sm:hidden">Buy</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
+                    <svg 
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                    width="10" height="10" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.91542 4.40772L4.42723 0.919521L5.34675 0L10.4048 5.05801L5.34675 10.116L4.42723 9.19651L7.91542 5.70831H0V4.40772H7.91542Z" fill="white"/>
+                    </svg>
                 </button>
             </div>
             <!-- </div> -->
-            
-    </nav>
+                </nav>
    <!-- Mobile Menu Overlay (CSS-only) -->
     <div class="mobile-menu-overlay fixed inset-0 bg-[#0a0a0a]/95 z-40 flex 
                 flex-col items-center justify-center space-y-6
@@ -68,55 +70,66 @@
     </div>
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto px-4 sm:px-8 pt-12 sm:pt-20 pb-6 text-center flex flex-col items-center">
-            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8 bg-[rgba(253,185,156,0.2)] px-1 py-1 pr-2 rounded-full">
-                <span class="bg-[var(--primary-color)] text-white text-xs px-[8px] py-[1px] rounded-full">
-                    Update
-                </span>
-                <a href="#" class="text-[var(--primaryText-color)] text-xs 
-                    flex items-center space-x-1 cursor-pointer">
-                    <span>
-                        See what's new in Grauberg
-                    </span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="w-2 h-2"/>
-                </a>
+            <div class="inline-flex items-center space-x-2 mb-6 sm:mb-8
+                        bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full ">
+                <div class="bg-[var(--primary-color)] px-[6px] rounded-full mr-[3px]">
+                    <p class="text-white text-[10px] leading-[16px]">Update</p>
+                </div>
+                <div class="flex items-center space-x-2 w-full ">
+                    <a href="#" class="px-[3px] m-0">
+                        <p class="text-[var(--primaryText-color)] text-[10px] font-medium">
+                            See what's new in Grauberg
+                        </p>
+                    </a>
+                <div class="px-[2px] py-[2px]">
+                    <svg 
+                    width="10" height="10" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.91542 4.40772L4.42723 0.919521L5.34675 0L10.4048 5.05801L5.34675 10.116L4.42723 9.19651L7.91542 5.70831H0V4.40772H7.91542Z" fill="white"/>
+                    </svg>
+                </div>
+                </div>
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-3xl sm:text-5xl md:text-[56px] font-medium mb-4 sm:mb-6">
+            <h1 class="text-3xl sm:text-5xl md:text-[56px] font-medium mb-[18px]">
                 Effortless Project<br>
                 Management for<br>
                 <span class="text-[var(--primary-color)] heading text-[28px] sm:text-[52px]"]>Digital Agencies</span>
             </h1>
 
             <!-- Subheading -->
-            <p class="text-[10px] sm:text-[16px] font-normal text-[var(--navText-color)] opacity-80 mb-6 sm:mb-8 px-2">
+            <p class="text-xs sm:text-base font-normal text-[var(--navText-color)] opacity-80 mb-[30px] px-2">
                 Streamline your projects, maximize efficiency, 
-                and elevate your <br> business with our cutting-edge project 
-                management tool <br> designed for the real estate industry.
+                and elevate your <br class="hidden sm:inline"> business with our cutting-edge project 
+                management tool <br class="hidden sm:inline"> designed for the real estate industry.
             </p>
 
             <!-- User Avatar -->
-            <div class="flex flex-col items-center space-y-4 sm:space-y-6 mb-10 sm:mb-16">
-                <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                    <div class="flex -space-x-2 sm:w-[100px] sm:h-[25px] mr-[5px]">
-                        <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
-                        <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-8 h-8 sm:w-[25px] sm:h-[25px] rounded-full border-[1.56px] border-black object-cover">
+            <div class="flex flex-col items-center space-y-4 sm:space-y-6 pb-[30px]">
+                <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 ">
+                    <div class="flex -space-x-2 sm:w-[100px] sm:h-[24px] mr-0">
+                        <img src="assets/CTA_Avatars/Frame241.png" alt="User" class="w-8 h-8 sm:w-[26px] sm:h-[26px] rounded-full border-[2px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame240.png" alt="User" class="w-8 h-8 sm:w-[26px] sm:h-[26px] rounded-full border-[2px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame242.png" alt="User" class="w-8 h-8 sm:w-[26px] sm:h-[26px] rounded-full border-[2px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame243.png" alt="User" class="w-8 h-8 sm:w-[26px] sm:h-[26px] rounded-full border-[2px] border-black object-cover">
+                        <img src="assets/CTA_Avatars/Frame244.png" alt="User" class="w-8 h-8 sm:w-[26px] sm:h-[26px] rounded-full border-[2px] border-black object-cover">
                     </div>
-                    <span class="text-[11px] 
-                    text-[var(--navText-color)] font-normal">
+                    <p class="text-[10px] 
+                    text-[var(--navText-color)] font-normal pl-3">
                     2000+ Active Users
-                    </span>
+                    </p>
                 </div>
 
-                <div class="bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full">
-                    <button class="group bg-[var(--primary-color)] text-white px-4 py-2 rounded-full 
-                    transition flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
-                    <span>Start Your Free Trial</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
-                    </button>
+                <div class="bg-[rgba(253,185,156,0.1)] px-1 py-1 rounded-full">
+                <button class="group bg-[var(--primary-color)] text-[var(--primaryText-color)] py-[8px] px-[10px] rounded-full transition flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+                    <p class="text-[10px]">Start Your Free Trial
+                    </p>
+                    <svg 
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                    width="10" height="10" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.91542 4.40772L4.42723 0.919521L5.34675 0L10.4048 5.05801L5.34675 10.116L4.42723 9.19651L7.91542 5.70831H0V4.40772H7.91542Z" fill="white"/>
+                    </svg>
+                </button>
                 </div>
 
             </div>
@@ -162,7 +175,7 @@
     </section>
     <!-- Trusted Companies Section -->
     <section class="flex items-center flex-col overflow-hidden mt-10 sm:mt-16 pb-10 px-4 sm:px-0">
-                <p class="text-[var(--navText-color)] font-light text-sm sm:text-base text-center">
+                <p class="text-[var(--navText-color)] font-normal text-sm sm:text-base text-center leading-[20px]">
                     Trusted by Leading Digital Agencies
                 </p>
                 <div class="w-full lg:w-5xl mt-6 relative overflow-hidden">
@@ -205,138 +218,115 @@
     <section class="max-w-5xl lg:max-w-none mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-6 text-center flex flex-col items-center overflow-x-hidden">
         <div class="w-full flex flex-col items-center">  
             <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
-                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
-                    <div class="px-[7.8px] py-[3.12px]">
-                        <p>See what's new in  
-                        <span class="text-[16px]"> 
+                    <div class="flex items-center space-x-1 px-2 py-[2px]">
+                        <p class="text-[10px] leading-[16px] text-[var(--primaryText-color)] font-medium">See what's new in  
+                        <span class="text-sm leading-[20px]"> 
                             Grauberg 
                         </span>
                     </p>
-                    </div>
-                </div>
+                   </div>
             </div>
-            <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
+            <div class="w-full flex flex-col items-center pb-10 sm:pb-16">
                 <!-- Main Heading -->
-                <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-[18px] leading-[1.1]">
                     Revolutionize  your<br>
                     <span class="text-[var(--primary-color)] heading">Project Management</span>
                 </h1>
 
                 <!-- Subheading -->
-                <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
+                <p class="text-sm sm:text-base font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
                     Unlock seamless collaboration and unparalleled <br class="hidden sm:block">
                     efficiency with our intuitive canvas board.
                 </p>
             </div>
         </div>
-            <div class="flex flex-col gap-6 sm:gap-10 w-full ">
+        <div class="flex flex-col gap-4">
                 <!-- First Card Row -->
           <div class="flex flex-col lg:flex-row items-stretch bg-[var(--SecondaryBgcolor)] rounded-2xl sm:rounded-3xl overflow-hidden
-            w-full max-w-[calc(100vw-2rem)] sm:max-w-[calc(100vw-4rem)] lg:max-w-[1100px] mx-auto h-auto lg:h-[500px] border-white/5 borde flex-wrap ">
+            w-full md:max-w-5xl mx-auto border-white/5 border">
             <!-- left image -->
-            <div class="w-full lg:w-1/2 h-[180px] sm:h-[240px] lg:h-full flex-shrink-0">
+            <div class="w-full lg:w-1/2 flex-shrink-0 h-[250px] md:h-[350px] lg:h-auto">
                 <img src="assets/Image_Cards/Process_Card/Card.svg" alt="Process Card"
                     class="w-full h-full object-cover drop-shadow-2xl"/>
             </div>
 
             <!-- right content -->
-            <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-4 sm:space-y-5 text-start p-5 sm:p-8 lg:p-10 lg:pl-10">
-                <!-- <div class="inline-flex items-center self-start bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] px-3 py-1 rounded-full border border-white/5">
-                <span class="text-[var(--primaryText-color)] text-xs sm:text-sm font-medium">
-                    See what's new in 
-                    <span class="text-[16px]"> 
-                        Grauberg 
-                    </span>
-                </span>
-            </div> -->
-            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] border border-white/5 rounded-full w-fit">
-                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
-                    <div class="px-[7.8px] py-[3.12px]">
-                        <p>See what's new in  
-                        <span class="text-[16px]"> 
+            <div class="w-full lg:w-1/2 flex flex-col justify-center space-y-4 sm:space-y-5 text-start px-[24px] py-[24px] sm:py-[78px]">
+
+            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full border border-white/5 w-fit">
+                    <div class="flex items-center space-x-1 px-2 py-[2px]">
+                        <p class="text-[10px] leading-[16px] text-[var(--primaryText-color)] font-medium">See what's new in  
+                        <span class="text-sm leading-[20px]"> 
                             Grauberg 
                         </span>
                     </p>
-                    </div>
-                </div>
+                   </div>
             </div>
-
-                <h2 class="text-xl sm:text-2xl md:text-[24.97px] font-medium text-white leading-tight">
-                    Seamless & Collaborative <br class="hidden lg:inline"/>Canvas Board
+                <div class="flex flex-col gap-y-[18px] pr-0 sm:pr-[92px] mb-[24px]">
+                <h2 class="text-xl sm:text-2xl font-medium text-white leading-tight">
+                    Seamless & Collaborative <br class="hidden lg:inline"> Canvas Board
                 </h2>
 
-                <p class="text-sm sm:text-[15px] font-light text-[var(--paText-color)] leading-relaxed opacity-80">
-                Experience the ultimate in project visualization and team <br class="hidden xl:inline"/>
-                collaboration. Our intuitive canvas board makes it easy to map <br class="hidden xl:inline"/>
-                out tasks, track progress, and ensure everyone is on the same <br class="hidden xl:inline"/>
-                page. With real-time updates and drag-and-drop functionality, <br class="hidden xl:inline"/>
-                your team can work together effortlessly, no matter where they <br class="hidden xl:inline"/>
+                <p class="text-xs font-normal text-[var(--paText-color)] leading-[18px] opacity-80">
+                Experience the ultimate in project visualization and team 
+                collaboration. Our intuitive canvas board makes it easy to map 
+                out tasks, track progress, and ensure everyone is on the same 
+                page. With real-time updates and drag-and-drop functionality, 
+                your team can work together effortlessly, no matter where they 
                 are.
                 </p>
-
-                <div class="group bg-[rgba(253,185,156,0.2)] px-1 py-1 rounded-full self-start">
-                <button class="bg-[var(--primary-color)] text-white px-4 sm:px-5 py-2 sm:py-2.5
-                 rounded-full flex items-center space-x-2 text-xs font-medium hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
-                    <span>Start Your Free Trial</span>
-                    <img src="assets/Vectors/Right_Arrow_Vector.svg" alt="right-arrow-vector" class="transition-transform duration-300 group-hover:translate-x-1"/>
+                </div>
+                <div class="bg-[rgba(253,185,156,0.1)] px-1 py-1 rounded-full w-fit">
+                <button class="group bg-[var(--primary-color)] text-[var(--primaryText-color)] py-[8px] px-[10px] rounded-full transition flex items-center space-x-2 text-xs cursor-pointer hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+                    <p class="text-[10px]">Start Your Free Trial
+                    </p>
+                    <svg 
+                    class="transition-transform duration-300 group-hover:translate-x-1"
+                    width="10" height="10" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.91542 4.40772L4.42723 0.919521L5.34675 0L10.4048 5.05801L5.34675 10.116L4.42723 9.19651L7.91542 5.70831H0V4.40772H7.91542Z" fill="white"/>
+                    </svg>
                 </button>
                 </div>
             </div>
             </div>     
             <!-- Feature Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 
-            text-start w-full max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[18px]
+            text-start w-full max-w-5xl mx-auto shrink-1">
             <!-- Real-Time Collaboration -->
-            <div class="flex flex-col">
-                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Real-Time Collaboration</h3>
-                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
-                    Stay connected with your team at all 
-                    <br class="hidden lg:inline"/> 
-                    times. Our canvas board updates in 
-                    <br class="hidden lg:inline"/> 
+            <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-[8px]">Real-Time Collaboration</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed opacity-80">
+                    Stay connected with your team at all  
+                    times. Our canvas board updates in  
                     real-time, allowing for instant feedback 
-                    <br class="hidden lg:inline"/>
                      and seamless teamwork, reducing 
-                     <br class="hidden lg:inline"/> 
                      delays and miscommunications.
                 </p>
             </div>
 
             <!-- Customizable Workflows -->
-            <div class="flex flex-col ml-0 md:ml-6">
-                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-4">Customizable Workflows</h3>
-                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
-                    Tailor the canvas board to fit your 
-                    <br class="hidden lg:inline"/> 
-                    
-                    unique project needs. Customize task 
-                    <br class="hidden lg:inline"/> 
-                    categories, set priorities, and create 
-                    <br class="hidden lg:inline"/> 
-                    templates that streamline your 
-                    <br class="hidden lg:inline"/> 
-                    processes and keep your projects on 
-                    <br class="hidden lg:inline"/> 
+            <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-[8px]">Customizable Workflows</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed opacity-80">
+                    Tailor the canvas board to fit your  
+                    unique project needs. Customize task  
+                    categories, set priorities, and create  
+                    templates that streamline your  
+                    processes and keep your projects on  
                     track.
                 </p>
             </div>
 
             <!-- Visual Task Management -->
-            <div class="flex flex-col ml-0 md:ml-6">
-                <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-4">Visual Task Management</h3>
-                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed">
-                    Easily visualize your project's progress 
-                    <br class="hidden lg:inline"/> 
+            <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
+                <h3 class="text-base sm:text-lg font-medium text-white mb-[8px]">Visual Task Management</h3>
+                <p class="text-[var(--primaryText-color)] font-normal text-sm leading-relaxed opacity-80">
+                    Easily visualize your project's progress  
                     with our intuitive interface. The drag-
-                    <br class="hidden lg:inline"/>
-                    and-drop functionality and clear task 
-                    <br class="hidden lg:inline"/> 
+                    and-drop functionality and clear task  
                     assignments ensure everyone knows 
-                    <br class="hidden lg:inline"/>
-                     what needs to be done and when,
-                    <br class="hidden lg:inline"/> 
+                     what needs to be done and when, 
                     leading to increased efficiency and
-                     <br class="hidden lg:inline"/>
                      clarity.
                 </p>
             </div>
@@ -350,23 +340,23 @@
     <section class="py-16 sm:py-24 overflow-hidden">
             <!-- Header Box -->
             <div class="w-full flex flex-col items-center">  
-            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
-                <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
-                    <div class="px-[7.8px] py-[3.12px]">
-                        <p>Real Feedback from Real Users</p>
-                    </div>
-                </div>
+             <div class="inline-flex items-center space-x-2 mb-[30px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
+                    <div class="flex items-center space-x-1 px-2 py-[2px]">
+                        <p class="text-[10px] leading-[16px] text-[var(--primaryText-color)] font-medium">
+                            Real Feedback from Real Users
+                        </p>
+                   </div>
             </div>
             <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
                 <!-- Main Heading -->
-                <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-[18px] leading-tight">
                     What
                     <span class="text-[var(--primary-color)] heading">Our Clients</span>
                     Are Saying
                 </h1>
 
                 <!-- Subheading -->
-                <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2 text-center">
+                <p class="text-base font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2 text-center leading-[20px]">
                     Our clients have experienced remarkable improvements in 
                     <br class="hidden sm:block">
                     their project management and overall productivity.
@@ -379,7 +369,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                        <div class="testimonial-card p-[30px] relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
                             <!-- Gradient overlay -->
                             <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
                             <!-- Card overlay for non-active slides -->
@@ -387,28 +377,28 @@
                             
                             <div class="relative z-20 text-start">
                                 <div class="flex gap-1 mb-4">
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
                                 </div>
-                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                <blockquote class="text-lg font-normal leading-relaxed mb-5 text-white">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique. 
                                     Duis cursus, mi quis viverra ornare, 
                                     eros dolor interdum nulla, ut commodo diam libero vitae erat."
                                 </blockquote>
                                 <div class="flex flex-col">
-                                    <span class="text-base font-semibold text-white">Name Surname</span>
-                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                    <span class="text-xs font-bold text-[var(--primaryText-color)]">Name Surname</span>
+                                    <span class="text-[var(--primaryText-color)] text-xs">Position, Company name</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                        <div class="testimonial-card p-[30px] relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
                             <!-- Gradient overlay -->
                             <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
                             <!-- Card overlay for non-active slides -->
@@ -416,28 +406,28 @@
                             
                             <div class="relative z-20 text-start">
                                 <div class="flex gap-1 mb-4">
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
                                 </div>
-                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                <blockquote class="text-lg font-normal leading-relaxed mb-5 text-white">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique. 
                                     Duis cursus, mi quis viverra ornare, 
                                     eros dolor interdum nulla, ut commodo diam libero vitae erat."
                                 </blockquote>
                                 <div class="flex flex-col">
-                                    <span class="text-base font-semibold text-white">Name Surname</span>
-                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                    <span class="text-xs font-bold text-[var(--primaryText-color)]">Name Surname</span>
+                                    <span class="text-[var(--primaryText-color)] text-xs">Position, Company name</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                        <div class="testimonial-card p-[30px] relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
                             <!-- Gradient overlay -->
                             <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
                             <!-- Card overlay for non-active slides -->
@@ -445,28 +435,28 @@
                             
                             <div class="relative z-20 text-start">
                                 <div class="flex gap-1 mb-4">
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
                                 </div>
-                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                <blockquote class="text-lg font-normal leading-relaxed mb-5 text-white">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique. 
                                     Duis cursus, mi quis viverra ornare, 
                                     eros dolor interdum nulla, ut commodo diam libero vitae erat."
                                 </blockquote>
                                 <div class="flex flex-col">
-                                    <span class="text-base font-semibold text-white">Name Surname</span>
-                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                    <span class="text-xs font-bold text-[var(--primaryText-color)]">Name Surname</span>
+                                    <span class="text-[var(--primaryText-color)] text-xs">Position, Company name</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                        <div class="testimonial-card p-[30px] relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
                             <!-- Gradient overlay -->
                             <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
                             <!-- Card overlay for non-active slides -->
@@ -474,28 +464,28 @@
                             
                             <div class="relative z-20 text-start">
                                 <div class="flex gap-1 mb-4">
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
                                 </div>
-                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                <blockquote class="text-lg font-normal leading-relaxed mb-5 text-white">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique. 
                                     Duis cursus, mi quis viverra ornare, 
                                     eros dolor interdum nulla, ut commodo diam libero vitae erat."
                                 </blockquote>
                                 <div class="flex flex-col">
-                                    <span class="text-base font-semibold text-white">Name Surname</span>
-                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                    <span class="text-xs font-bold text-[var(--primaryText-color)]">Name Surname</span>
+                                    <span class="text-[var(--primaryText-color)] text-xs">Position, Company name</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Slide 5 -->
                     <div class="swiper-slide">
-                        <div class="testimonial-card relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
+                        <div class="testimonial-card p-[30px] relative bg-[var(--SecondaryBgcolor)] shadow-2xl overflow-hidden">
                             <!-- Gradient overlay -->
                             <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] [background:var(--linear-gradient)] opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
                             <!-- Card overlay for non-active slides -->
@@ -503,21 +493,21 @@
                             
                             <div class="relative z-20 text-start">
                                 <div class="flex gap-1 mb-4">
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
-                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-5 h-5"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
+                                    <img src="assets/Vectors/Star_Vector.svg" alt="star" class="w-4 h-[14px]"/>
                                 </div>
-                                <blockquote class="text-lg font-light leading-relaxed mb-5 text-white">
+                                <blockquote class="text-lg font-normal leading-relaxed mb-5 text-white">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique. 
                                     Duis cursus, mi quis viverra ornare, 
                                     eros dolor interdum nulla, ut commodo diam libero vitae erat."
                                 </blockquote>
                                 <div class="flex flex-col">
-                                    <span class="text-base font-semibold text-white">Name Surname</span>
-                                    <span class="text-gray-500 text-sm">Position, Company name</span>
+                                    <span class="text-xs font-bold text-[var(--primaryText-color)]">Name Surname</span>
+                                    <span class="text-[var(--primaryText-color)] text-xs">Position, Company name</span>
                                 </div>
                             </div>
                         </div>
@@ -531,101 +521,99 @@
     </section>
         <!-- Features Section - 2nd -->
     <section class="w-full mx-auto px-4 sm:px-8 pt-16 sm:pt-24 pb-16 text-center flex flex-col items-center bg-[var(--thirdBgcolor)]">
-            <div class="w-full flex flex-col items-center">  
-                <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
-                    <div class="text-[var(--primaryText-color)] text-sm transition flex items-center space-x-1">
-                        <div class="px-[7.8px] py-[3.12px]">
-                            <p>See what's new in  
-                            <span class="text-[16px]"> 
-                                Grauberg 
-                            </span>
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
-                    <!-- Main Heading -->
-                    <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
-                        Unleash the full potential <br> of
-                        <span class="text-[var(--primary-color)] heading">Your Projects</span>
-                    </h1>
-
-                    <!-- Subheading -->
-                    <p class="text-[15.61px] font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
-                        Discover the powerful features that make our project  <br class="hidden sm:block">
-                        efficiency with our intuitive canvas board.
+        <div class="w-full flex flex-col items-center pb-10 sm:pb-[62px]">  
+            <div class="inline-flex items-center space-x-2 mb-[31.21px] bg-[rgb(from_var(--primaryBgcolor)_r_g_b_/_0.1)] rounded-full">
+                    <div class="flex items-center space-x-1 px-2 py-[2px]">
+                        <p class="text-[10px] leading-[16px] text-[var(--primaryText-color)] font-medium">See what's new in  
+                        <span class="text-sm leading-[20px]"> 
+                            Grauberg 
+                        </span>
                     </p>
-                </div>
+                   </div>
             </div>
+            <div class="w-full flex flex-col items-center">
+                <!-- Main Heading -->
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-[18px] leading-[1.1]">
+                    Unleash the full potential<br>
+                    <span class="text-[var(--primary-color)] heading">Your Projects</span>
+                </h1>
+
+                <!-- Subheading -->
+                <p class="text-sm sm:text-base font-normal text-[var(--navText-color)] opacity-80 max-w-2xl px-2">
+                    Discover the powerful features that make our project <br class="hidden sm:block">
+                    management tool indispensable for digital agencies.
+                </p>
+            </div>
+        </div>
 
             <!-- Feature Cards Grid - centered -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-start max-w-[1100px] 
-            w-full mt-8 sm:mt-12 gap-y-12 gap-x-16 lg:gap-x-24 px-4 sm:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-start max-w-5xl
+            w-full px-4 gap-y-[18px] gap-x-[18px] sm:px-8">
                 
                 <!-- Seamless Collaboration -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Group_Vector.svg" alt="Collaboration" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Seamless Collaboration</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
-                        Our platform enables real-time collaboration, 
-                        ensuring that your team stays connected and coordinated, 
-                        no matter where they are.
+                        Our platform enables real-time  collaboration, 
+                        ensuring that your  team  stays connected and coordinated, 
+                        no  matter where they are.
                     </p>
                 </div>
 
                 <!-- Customizable Workflows -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Gear_Vector.svg" alt="Workflows" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Customizable Workflows</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
-                        Tailor the canvas board to fit your unique project needs. 
-                        Customize task categories, set priorities, 
-                        and create templates that streamline 
-                        your processes and keep your projects on track.
+                        Tailor the canvas board to fit your  unique project needs. 
+                        Customize task  categories, set priorities, 
+                        and create  templates that streamline 
+                        your  processes and keep your projects on  track.
                     </p>
                 </div>
 
                 <!-- Advanced Analytics -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Pie_Chart_Vector.svg" alt="Analytics" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Advanced Analytics</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
                         Gain insights with our robust analytics dashboard. 
-                        Track key metrics, monitor progress, and make 
-                        data-driven decisions to enhance project outcomes.
+                        Track  key metrics, monitor  progress, and make 
+                        data-driven  decisions to enhance project outcomes.
                     </p>
                 </div>
 
                 <!-- Time Tracking -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Clock_Vector.svg" alt="Time Tracking" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Time Tracking</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
-                        Keep track of time spent on tasks to improve efficiency 
-                        and optimize resource allocation, ensuring every 
-                        project stays on schedule and within budget.
+                        Keep track of time spent on tasks to  improve efficiency 
+                        and optimize  resource allocation, ensuring every  
+                        project stays on schedule and within  budget.
                     </p>
                 </div>
 
                 <!-- Automated Notifications -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Alaram_Vector.svg" alt="Notifications" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Automated Notifications</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
-                        Stay on top of deadlines with automated reminders 
-                        and notifications, reducing the risk of missed 
-                        tasks and ensuring timely project completion.
+                        Stay on top of deadlines with  automated reminders 
+                        and notifications,  reducing the risk of missed 
+                        tasks and  ensuring timely project completion.
                     </p>
                 </div>
 
                 <!-- Visual Task Management -->
-                <div class="flex flex-col">
+                <div class="flex flex-col px-2 sm:px-[32px] py-[32px]">
                     <img src="assets/Vectors/Grid_blocks_Vector.svg" alt="Task Management" class="w-8 h-8 sm:w-10 sm:h-10 mb-3 sm:mb-4"/>
                     <h3 class="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3">Visual Task Management</h3>
                     <p class="text-[var(--navText-color)] text-xs sm:text-sm leading-relaxed">
-                        Easily visualize your project's progress with our 
-                        intuitive interface. Drag-and-drop functionality 
-                        and clear task assignments enhance clarity and efficiency.
+                        Easily visualize your project's   with our 
+                        intuitive interface. Drag-and-  drop functionality 
+                        and clear task  assignments enhance clarity and  efficiency.
                     </p>
                 </div>
 
@@ -639,7 +627,7 @@
             <div class="w-full flex flex-col items-center mb-10 sm:mb-16">
                     <!-- Main Heading -->
                     <h1 class="text-2xl sm:text-3xl md:text-[37.41px] font-medium mb-4 sm:mb-[18.73px] leading-tight">
-                        Choose the perfect <br>plan for
+                        Choose the perfect plan for
                         <span class="text-[var(--primary-color)] heading">Your Agency</span>
                     </h1>
 
@@ -661,7 +649,7 @@
                         Free
                     </h2>
                 </div>
-                <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mb-8 text-start">
+                <p class="text-xs font-normal text-[var(--primaryText-color)] opacity-80 mb-8 text-start">
                     Perfect for individuals and small 
                     <br> 
                     teams getting started.
@@ -719,7 +707,7 @@
                 <p class="text-xs text-[var(--primaryText-color)] opacity-80 mb-1 text-start">
                     Per user / Yearly
                 </p>
-                <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">
+                <p class="text-xs font-normal text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">
                     Ideal for growing teams that need more advanced features and support.
                 </p>
                 
@@ -777,7 +765,7 @@
                 <p class="text-xs text-[var(--primaryText-color)] opacity-80 mb-1 text-start">
                     Per user / Yearly
                 </p>
-                <p class="text-xs font-light text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">
+                <p class="text-xs font-normal text-[var(--primaryText-color)] opacity-80 mt-1 mb-8 text-start">
                     Designed for large agencies that require comprehensive tools and premium support.
                 </p>
                 
