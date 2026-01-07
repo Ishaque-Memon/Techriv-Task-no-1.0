@@ -182,32 +182,7 @@
                     Trusted by Leading Digital Agencies
                 </p>
                 <div class="w-full lg:w-5xl mt-6 relative overflow-hidden">
-                    <div class="mt-7 flex animate-slide opacity-60">
-                        <!-- Set 1 -->
-                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <!-- Set 2 (duplicate) -->
-                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <!-- Set 3 (duplicate) -->
-                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <!-- Set 4 (duplicate) -->
-                        <img src="assets/Compaines_Logo/colorado-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/delaware-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Greenish.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Hamilton-white.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                        <img src="assets/Compaines_Logo/Vision.svg" alt="Trusted Companies" class="shrink-0 h-6 sm:h-auto mx-5"/>
-                    </div>
+                    <div id="logo-container" class="mt-7 flex animate-slide opacity-60"></div>
                     <div class="absolute left-0 top-0 bottom-0 z-10 ">
                         <img src="assets/Slider_Overlays/overlayleft.svg" alt="Trusted Companies"/> 
                     </div>
@@ -1149,6 +1124,34 @@
                     clickable: true,
                 },
             });
+
+
+        // Marquee Animation Adjustment
+        const logoContainer = document.getElementById("logo-container");
+
+        // Creating an array of logos
+        const logos = [
+            "assets/Companies_Logo/colorado-white.svg",
+            "assets/Companies_Logo/delaware-white.svg",
+            "assets/Companies_Logo/Greenish.svg",    
+            "assets/Companies_Logo/Hamilton-white.svg",    
+            "assets/Companies_Logo/Manila-white.svg",    
+            "assets/Companies_Logo/Vision.svg",    
+        ];
+
+        // Duplicate sets of logos to create a seamless loop
+        const set = 10;
+
+        // This loop will create multiple sets of logos
+        for (let i = 0; i < set; i++) {
+            logos.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = "Trusted Companies";
+                img.className = "shrink-0 h-6 sm:h-auto mx-5";
+                logoContainer.appendChild(img);
+            })
+        }
         </script>
 
   </body>
